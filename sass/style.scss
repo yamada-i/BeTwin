@@ -1,0 +1,27 @@
+@import "_reset";
+@import "_variable";
+
+/*==========================================
+全体レイアウト
+==========================================*/
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+/*==========================================
+共通パーツ
+==========================================*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
