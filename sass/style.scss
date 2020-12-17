@@ -19,6 +19,7 @@ body {
   width: 100%;
 }
 a {
+  color: $black-color;
   text-decoration: none;
   cursor: pointer;
 }
@@ -32,8 +33,8 @@ img {
   padding: 2vw 0 3vw 0;
   &_top {
     p {
-      font-size: 0.92vw;
-      letter-spacing: 2px;
+      @include fz_vw(15);
+      letter-spacing: 0.1em;
     }
   }
   &_bottom {
@@ -55,8 +56,8 @@ img {
       padding-left: 3.4vw;
       a {
         color: $black-color;
-        font-size: 1.22vw;
-        letter-spacing: 3px;
+        @include fz_vw(17);
+        letter-spacing: 0.1em;
         font-weight: bold;
       }
     }
@@ -101,7 +102,7 @@ img {
 .outline {
   display: inline-block;
   color: transparent;
-  font-size: 14vw;
+  @include fz_vw(202);
   font-weight: bold;
   -webkit-text-stroke: 1px #aaa;
 }
@@ -119,20 +120,21 @@ img {
 /*---------h2見出し------------*/
 .h2_index {
   color: $naivy-color;
-  font-size: 3.1vw;
+  @include fz_vw(48);
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 0.1em;
+  display: inline-block;
   &:after {
     content: '';
-    margin: 3vw auto 0 auto;
     display: block;
     width: 11vw;
     height: 1px;
     background-color: $naivy-color;
+    margin: 3vw auto 0 auto;
   }
 }
-/*---------h3見出し------------*/
-.h3_index {
+/*---------h4見出し------------*/
+.h4_index {
   color: $naivy-color;
   font-size: 1.6vw;
   font-weight: bold;
@@ -152,11 +154,11 @@ img {
 #top {
   /*-----------キャッチコピー------------*/
   .mv_catchcopy {
-    font-size: 3.1vw;
+    @include fz_vw(48);
     color: $white-color;
     font-weight: bold;
     position: absolute;
-    letter-spacing: 8px;
+    letter-spacing: .07em;
     line-height: 1.6;
     top: 19.8vw;
     left: 9vw;
@@ -176,6 +178,9 @@ img {
   /*---------BeTwinについて----------*/
   .services {
     position: relative;
+    width: 100%;
+    height: 62vw;  
+    margin-bottom: 10vw;
     &_contents {
       width: 75%;
       margin: 18vw auto 0 auto;
@@ -205,15 +210,15 @@ img {
         right: -7vw;
       }
       &_text {
-        font-size: 1.2vw;
+        @include fz_vw(17);
         font-weight: bold;
-        letter-spacing: 6px;
+        letter-spacing: 0.25em;
         line-height: 2.3;
         margin: 3vw 0 6.4vw 0;
       }
       &_btn {
-        font-size: 1.2vw;
-        letter-spacing: 4px;
+        @include fz_vw(17);
+        letter-spacing: 0.25em;
         background-color: $yellow-color;
         border-radius: 20px;
         padding: 0.8vw 6vw;
@@ -231,13 +236,49 @@ img {
       right: 6.7vw;
     }
   }
+  /*---------施工事例----------*/
+  .cases {
+    width: 100%;
+    height: 50vw;
+    .outline {
+      position: absolute;
+      right: -0.9vw;
+    }
+    &_contents {
+      position: relative;
+      .h2_index {
+        position: absolute;
+        top: 4vw;
+        left: 14vw;
+      }
+      .circle:before {
+        position: absolute;
+        top: -3vw;
+        left: -9vw;
+      }
+      &_wrap {
+        position: absolute;
+        top: 30vw;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &_panel {
+        padding: 1vw;
+        &_img {
+          width: 20.9vw;
+        }
+      }
+    }
+  }
 }
 /*==========================================
   事業内容ページ
 ==========================================*/
+
 /*==========================================
   施工事例ページ
 ==========================================*/
+
 /*==========================================
   会社概要ページ
 ==========================================*/

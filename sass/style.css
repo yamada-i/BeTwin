@@ -50,6 +50,7 @@ body {
 }
 
 a {
+  color: #333;
   text-decoration: none;
   cursor: pointer;
 }
@@ -66,8 +67,9 @@ img {
 }
 
 .header_top p {
-  font-size: 0.92vw;
-  letter-spacing: 2px;
+  font-size: 15px;
+  font-size: 1.04167vw;
+  letter-spacing: 0.1em;
 }
 
 .header_bottom {
@@ -107,8 +109,9 @@ img {
 
 .nav .menu_list a {
   color: #333;
-  font-size: 1.22vw;
-  letter-spacing: 3px;
+  font-size: 17px;
+  font-size: 1.18056vw;
+  letter-spacing: 0.1em;
   font-weight: bold;
 }
 
@@ -155,7 +158,8 @@ img {
 .outline {
   display: inline-block;
   color: transparent;
-  font-size: 14vw;
+  font-size: 202px;
+  font-size: 14.02778vw;
   font-weight: bold;
   -webkit-text-stroke: 1px #aaa;
 }
@@ -175,29 +179,31 @@ img {
 /*---------h2見出し------------*/
 .h2_index {
   color: #141f50;
-  font-size: 3.1vw;
+  font-size: 48px;
+  font-size: 3.33333vw;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 0.1em;
+  display: inline-block;
 }
 
 .h2_index:after {
   content: '';
-  margin: 3vw auto 0 auto;
   display: block;
   width: 11vw;
   height: 1px;
   background-color: #141f50;
+  margin: 3vw auto 0 auto;
 }
 
-/*---------h3見出し------------*/
-.h3_index {
+/*---------h4見出し------------*/
+.h4_index {
   color: #141f50;
   font-size: 1.6vw;
   font-weight: bold;
   letter-spacing: 10px;
 }
 
-.h3_index:after {
+.h4_index:after {
   content: '';
   margin: 2vw auto 0 auto;
   display: block;
@@ -212,14 +218,16 @@ img {
 #top {
   /*-----------キャッチコピー------------*/
   /*---------BeTwinについて----------*/
+  /*---------施工事例----------*/
 }
 
 #top .mv_catchcopy {
-  font-size: 3.1vw;
+  font-size: 48px;
+  font-size: 3.33333vw;
   color: #fff;
   font-weight: bold;
   position: absolute;
-  letter-spacing: 8px;
+  letter-spacing: .07em;
   line-height: 1.6;
   top: 19.8vw;
   left: 9vw;
@@ -240,6 +248,9 @@ img {
 
 #top .services {
   position: relative;
+  width: 100%;
+  height: 62vw;
+  margin-bottom: 10vw;
 }
 
 #top .services_contents {
@@ -276,16 +287,18 @@ img {
 }
 
 #top .services_contents_text {
-  font-size: 1.2vw;
+  font-size: 17px;
+  font-size: 1.18056vw;
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: 0.25em;
   line-height: 2.3;
   margin: 3vw 0 6.4vw 0;
 }
 
 #top .services_contents_btn {
-  font-size: 1.2vw;
-  letter-spacing: 4px;
+  font-size: 17px;
+  font-size: 1.18056vw;
+  letter-spacing: 0.25em;
   background-color: #fff579;
   border-radius: 20px;
   padding: 0.8vw 6vw;
@@ -303,6 +316,52 @@ img {
 #top .services .circle:before {
   top: 4.2vw;
   right: 6.7vw;
+}
+
+#top .cases {
+  width: 100%;
+  height: 50vw;
+}
+
+#top .cases .outline {
+  position: absolute;
+  right: -0.9vw;
+}
+
+#top .cases_contents {
+  position: relative;
+}
+
+#top .cases_contents .h2_index {
+  position: absolute;
+  top: 4vw;
+  left: 14vw;
+}
+
+#top .cases_contents .circle:before {
+  position: absolute;
+  top: -3vw;
+  left: -9vw;
+}
+
+#top .cases_contents_wrap {
+  position: absolute;
+  top: 30vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+#top .cases_contents_panel {
+  padding: 1vw;
+}
+
+#top .cases_contents_panel_img {
+  width: 20.9vw;
 }
 
 /*==========================================
