@@ -121,6 +121,7 @@ img {
   height: 44vw;
   margin-bottom: 10vw;
   position: relative;
+  /*-----------キャッチコピー------------*/
 }
 
 .mv_img {
@@ -154,6 +155,31 @@ img {
   z-index: -2;
 }
 
+.mv_catchcopy {
+  font-size: 48px;
+  font-size: 3.33333vw;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: .07em;
+  line-height: 1.6;
+  top: 19.8vw;
+  left: 9vw;
+  z-index: 2;
+}
+
+.mv_catchcopy:before {
+  content: '';
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff579;
+  position: absolute;
+  top: -1.2vw;
+  left: -1.2vw;
+}
+
 /*----------見出し（中抜き）------------*/
 .outline {
   display: inline-block;
@@ -176,6 +202,28 @@ img {
   z-index: -1;
 }
 
+/*----------水玉の飾り------------*/
+.dott:before, .dott:after {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/bg_navydot.png);
+  background-size: 100%;
+  position: absolute;
+  width: 26vw;
+  height: 16vw;
+  z-index: -1;
+}
+
+.dott:before {
+  top: -5vw;
+  left: -7vw;
+}
+
+.dott:after {
+  bottom: -5vw;
+  right: -7vw;
+}
+
 /*---------h2見出し------------*/
 .h2_index {
   color: #141f50;
@@ -195,12 +243,32 @@ img {
   margin: 3vw auto 0 auto;
 }
 
+/*---------h3見出し------------*/
+.h3_index {
+  color: #141f50;
+  font-size: 38px;
+  font-size: 2.63889vw;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.h3_index:after {
+  content: '';
+  display: block;
+  width: 6vw;
+  height: 1px;
+  background-color: #141f50;
+  margin: 1.8vw auto 0 auto;
+}
+
 /*---------h4見出し------------*/
 .h4_index {
   color: #141f50;
-  font-size: 1.6vw;
+  font-size: 23px;
+  font-size: 1.59722vw;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 0.25em;
 }
 
 .h4_index:after {
@@ -212,38 +280,79 @@ img {
   background-color: #141f50;
 }
 
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+}
+
+.contact .dott:before {
+  top: -3vw;
+}
+
+.contact .dott:after {
+  opacity: .1;
+  bottom: -3vw;
+}
+
+.contact_contents {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5vw 7vw 5vw 8vw;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+
+.contact_wrap {
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact_wrap_tel, .contact_wrap_fax {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_wrap_tel img, .contact_wrap_fax img {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-right: 1.8vw;
+}
+
+.contact_wrap_tel_index, .contact_wrap_fax_index {
+  font-size: 18px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  letter-spacing: .15em;
+  margin-bottom: 1vw;
+}
+
+.contact_wrap_tel_num, .contact_wrap_fax_num {
+  font-size: 34px;
+  font-size: 2.36111vw;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
 /*==========================================
   トップページ
 ==========================================*/
 #top {
-  /*-----------キャッチコピー------------*/
   /*---------BeTwinについて----------*/
   /*---------施工事例----------*/
-}
-
-#top .mv_catchcopy {
-  font-size: 48px;
-  font-size: 3.33333vw;
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  letter-spacing: .07em;
-  line-height: 1.6;
-  top: 19.8vw;
-  left: 9vw;
-  z-index: 2;
-}
-
-#top .mv_catchcopy:before {
-  content: '';
-  width: 1.2vw;
-  height: 1.2vw;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #fff579;
-  position: absolute;
-  top: -1.2vw;
-  left: -1.2vw;
 }
 
 #top .services {
@@ -251,6 +360,10 @@ img {
   width: 100%;
   height: 62vw;
   margin-bottom: 10vw;
+}
+
+#top .services .dott:before {
+  opacity: .1;
 }
 
 #top .services_contents {
@@ -262,28 +375,6 @@ img {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-}
-
-#top .services_contents:before, #top .services_contents:after {
-  content: '';
-  display: inline-block;
-  background-image: url(../img/bg_navydot.png);
-  background-size: 100%;
-  position: absolute;
-  width: 26vw;
-  height: 16vw;
-  z-index: -2;
-}
-
-#top .services_contents:before {
-  top: -5vw;
-  left: -7vw;
-  opacity: .1;
-}
-
-#top .services_contents:after {
-  bottom: -5vw;
-  right: -7vw;
 }
 
 #top .services_contents_text {
@@ -320,12 +411,25 @@ img {
 
 #top .cases {
   width: 100%;
-  height: 50vw;
+  height: 62vw;
+  position: relative;
 }
 
 #top .cases .outline {
   position: absolute;
   right: -0.9vw;
+}
+
+#top .cases:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 27vw;
+  background-color: #141f50;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
 }
 
 #top .cases_contents {
@@ -344,24 +448,69 @@ img {
   left: -9vw;
 }
 
-#top .cases_contents_wrap {
+/*---------施工事例パネル----------*/
+.cases_contents_wrap {
   position: absolute;
-  top: 30vw;
+  top: 13vw;
+  left: 9.6vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
 }
 
-#top .cases_contents_panel {
-  padding: 1vw;
+.cases_contents_panel {
+  width: 100%;
+  padding: 3.2vw;
 }
 
-#top .cases_contents_panel_img {
+.cases_contents_panel_img {
   width: 20.9vw;
+}
+
+.cases_contents_panel_client {
+  background-color: #fff;
+  width: 69%;
+  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+  position: relative;
+  top: -2.3vw;
+  left: 0.2vw;
+}
+
+.cases_contents_panel_client_adress, .cases_contents_panel_client_name {
+  font-size: 14px;
+  font-size: 0.97222vw;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+}
+
+.cases_contents_panel_client_name {
+  line-height: 1.2;
+}
+
+.cases_contents_panel_more {
+  display: inline-block;
+  background-color: #fff579;
+  border-radius: 1vw;
+  padding: .8vw 3vw;
+  font-size: 13px;
+  font-size: 0.90278vw;
+  letter-spacing: 0.1em;
+  margin-top: 1.2vw;
+}
+
+.cases_contents_panel_1 .cases_contents_panel_client {
+  left: 0.05vw;
+}
+
+.cases_contents_panel_2 {
+  position: relative;
+  top: 3.4vw;
+}
+
+.cases_contents_panel_3 {
+  position: relative;
+  top: 6.4vw;
 }
 
 /*==========================================

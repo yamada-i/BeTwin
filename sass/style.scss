@@ -97,63 +97,8 @@ img {
     height: 18vw;
     z-index: -2;
   }
-}
-/*----------見出し（中抜き）------------*/
-.outline {
-  display: inline-block;
-  color: transparent;
-  @include fz_vw(202);
-  font-weight: bold;
-  -webkit-text-stroke: 1px #aaa;
-}
-/*----------丸（黄色）------------*/
-.circle:before {
-  content: '';
-  display: inline-block;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  background-color: $yellow-color;
-  position: absolute;
-  z-index: -1;
-}
-/*---------h2見出し------------*/
-.h2_index {
-  color: $naivy-color;
-  @include fz_vw(48);
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  display: inline-block;
-  &:after {
-    content: '';
-    display: block;
-    width: 11vw;
-    height: 1px;
-    background-color: $naivy-color;
-    margin: 3vw auto 0 auto;
-  }
-}
-/*---------h4見出し------------*/
-.h4_index {
-  color: $naivy-color;
-  font-size: 1.6vw;
-  font-weight: bold;
-  letter-spacing: 10px;
-  &:after {
-    content: '';
-    margin: 2vw auto 0 auto;
-    display: block;
-    width: 6vw;
-    height: 1px;
-    background-color: $naivy-color;
-  }
-}
-/*==========================================
-  トップページ
-==========================================*/
-#top {
   /*-----------キャッチコピー------------*/
-  .mv_catchcopy {
+  &_catchcopy {
     @include fz_vw(48);
     color: $white-color;
     font-weight: bold;
@@ -175,12 +120,155 @@ img {
       left: -1.2vw;
     }
   }
+}
+/*----------見出し（中抜き）------------*/
+.outline {
+  display: inline-block;
+  color: transparent;
+  @include fz_vw(202);
+  font-weight: bold;
+  -webkit-text-stroke: 1px #aaa;
+}
+/*----------丸（黄色）------------*/
+.circle:before {
+  content: '';
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: $yellow-color;
+  position: absolute;
+  z-index: -1;
+}
+/*----------水玉の飾り------------*/
+.dott {
+  &:before, &:after {  // ドット
+    content: '';
+    display: inline-block;
+    background-image: url(../img/bg_navydot.png);
+    background-size: 100%;
+    position: absolute;
+    width: 26vw;
+    height: 16vw;
+    z-index: -1;
+  }
+  &:before {  // 左上のドット
+    top: -5vw;
+    left: -7vw;
+  }
+  &:after {  // 右下のドット
+    bottom: -5vw;
+    right: -7vw;
+  }
+}
+/*---------h2見出し------------*/
+.h2_index {
+  color: $naivy-color;
+  @include fz_vw(48);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  &:after {
+    content: '';
+    display: block;
+    width: 11vw;
+    height: 1px;
+    background-color: $naivy-color;
+    margin: 3vw auto 0 auto;
+  }
+}
+/*---------h3見出し------------*/
+.h3_index {
+  color: $naivy-color;
+  @include fz_vw(38);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  &:after {
+    content: '';
+    display: block;
+    width: 6vw;
+    height: 1px;
+    background-color: $naivy-color;
+    margin: 1.8vw auto 0 auto;
+  }
+}
+/*---------h4見出し------------*/
+.h4_index {
+  color: $naivy-color;
+  @include fz_vw(23);
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  &:after {
+    content: '';
+    margin: 2vw auto 0 auto;
+    display: block;
+    width: 6vw;
+    height: 1px;
+    background-color: $naivy-color;
+  }
+}
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+  .dott {
+    &:before {
+      top: -3vw;
+    }
+    &:after {
+      opacity: .1;
+      bottom: -3vw;
+    }
+  }
+  &_contents {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5vw 7vw 5vw 8vw;
+    background-color: $gray-color;
+    text-align: center;
+    position: relative;
+  }
+  &_wrap {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    &_tel, &_fax {
+      display: flex;
+      align-items: center;
+      img {
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 1.8vw;
+      }
+      &_index {
+        @include fz_vw(18);
+        font-weight: bold;
+        letter-spacing: .15em;
+        margin-bottom: 1vw;
+      }
+      &_num {
+        @include fz_vw(34);
+        font-weight: bold;
+        letter-spacing: .1em;
+      }
+    }
+  }
+}
+/*==========================================
+  トップページ
+==========================================*/
+#top {
   /*---------BeTwinについて----------*/
   .services {
     position: relative;
     width: 100%;
     height: 62vw;  
     margin-bottom: 10vw;
+    .dott {
+      &:before {
+        opacity: .1;
+      }
+    }
     &_contents {
       width: 75%;
       margin: 18vw auto 0 auto;
@@ -190,25 +278,6 @@ img {
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
-      &:before, &:after {  // ドット
-        content: '';
-        display: inline-block;
-        background-image: url(../img/bg_navydot.png);
-        background-size: 100%;
-        position: absolute;
-        width: 26vw;
-        height: 16vw;
-        z-index: -2;
-      }
-      &:before {  // 左上のドット
-        top: -5vw;
-        left: -7vw;
-        opacity: .1;
-      }
-      &:after {  // 右下のドット
-        bottom: -5vw;
-        right: -7vw;
-      }
       &_text {
         @include fz_vw(17);
         font-weight: bold;
@@ -239,10 +308,22 @@ img {
   /*---------施工事例----------*/
   .cases {
     width: 100%;
-    height: 50vw;
+    height: 62vw;
+    position: relative;
     .outline {
       position: absolute;
       right: -0.9vw;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 27vw;
+      background-color: $naivy-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -5;
     }
     &_contents {
       position: relative;
@@ -256,19 +337,61 @@ img {
         top: -3vw;
         left: -9vw;
       }
-      &_wrap {
-        position: absolute;
-        top: 30vw;
-        display: flex;
-        flex-wrap: wrap;
+    }
+  }
+}
+/*---------施工事例パネル----------*/
+.cases_contents {
+  &_wrap {
+    position: absolute;
+    top: 13vw;
+    left: 9.6vw;
+    display: flex;
+  }
+  &_panel {
+    width: 100%;
+    padding: 3.2vw;
+    &_img {
+      width: 20.9vw;
+    }
+    &_client {
+      background-color: $white-color;
+      width: 69%;
+      padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+      position: relative;
+      top: -2.3vw;
+      left: 0.2vw;
+      &_adress, &_name {
+        @include fz_vw(14);
+        line-height: 1.8;
+        letter-spacing: 0.1em;
       }
-      &_panel {
-        padding: 1vw;
-        &_img {
-          width: 20.9vw;
-        }
+      &_name {
+        line-height: 1.2;
       }
     }
+    &_more {
+      display: inline-block;
+      background-color: $yellow-color;
+      border-radius: 1vw;
+      padding: .8vw 3vw;
+      @include fz_vw(13);
+      letter-spacing: 0.1em;
+      margin-top: 1.2vw;
+    }
+  }
+  &_panel_1 {
+    .cases_contents_panel_client {
+      left: 0.05vw;
+    }
+  }
+  &_panel_2 {
+    position: relative;
+    top: 3.4vw;
+  }
+  &_panel_3 {
+    position: relative;
+    top: 6.4vw;
   }
 }
 /*==========================================
