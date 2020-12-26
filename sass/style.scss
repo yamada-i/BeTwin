@@ -32,9 +32,18 @@ img {
   margin: 0 auto;
   padding: 2vw 0 3vw 0;
   &_top {
+    @include px768() {
+      padding-top: 2vw;
+    }
     p {
       @include fz_vw(15);
       letter-spacing: 0.1em;
+      @include px1280() {
+        font-size: 14px;
+      }
+      @include px768() {
+        display: none;
+      }
     }
   }
   &_bottom {
@@ -43,8 +52,17 @@ img {
     align-items: flex-end;
     flex-wrap: wrap;
     padding: 0 7.2vw;
+    @include px1000() {
+      padding: 0 3vw;
+    }
     &_logo {
       width: 17%;
+      @include px1366() {
+        width: 20%;
+      }
+      @include px768() {
+        width: 25%;
+      }
     }
   }
 }
@@ -59,6 +77,12 @@ img {
         @include fz_vw(17);
         letter-spacing: 0.1em;
         font-weight: bold;
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1000() {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -69,12 +93,30 @@ img {
   height: 44vw;
   margin-bottom: 10vw;
   position: relative;
+  @include px1000() {
+    height: 48vw;
+  }
+  @include px768() {
+    height: 500px;
+    margin-bottom: 150px;
+  }
   &_img {
     width: 76%;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
+    @include px1000() {
+      width: 85%;
+    }
+    @include px768() {
+      img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        object-position: 50% 100%;
+      }
+    }
   }
   &_back {  // 紺背景
     width: 80vw;
@@ -84,6 +126,13 @@ img {
     top: 5.8vw;
     left: 0;
     z-index: -1;
+    @include px1000() {
+      height: 38vw;
+    }
+    @include px768() {
+      height: 420px;
+      top: 45px;
+    }
   }
   &:after {  // ドット
     content: '';
@@ -96,6 +145,15 @@ img {
     width: 32vw;
     height: 18vw;
     z-index: -2;
+    @include px1000() {
+      width: 28vw;
+      right: 10vw;
+    }
+    @include px768() {
+      width: 180px;
+      height: 138px;
+      background-size: 120%;
+    }
   }
   /*-----------キャッチコピー------------*/
   &_catchcopy {
@@ -108,6 +166,20 @@ img {
     top: 19.8vw;
     left: 9vw;
     z-index: 2;
+    @include px1000() {
+      @include fz_vw(58);
+      top: 22vw;
+    }
+    @include px768() {
+      font-size: 38px;
+      top: 230px;
+    }
+    .cc_br {
+      display: none;
+      @include px768() {
+        display: block;
+      }
+    }
     &:before {  //黄色の丸（小）
       content: '';
       width: 1.2vw;
@@ -118,6 +190,10 @@ img {
       position: absolute;
       top: -1.2vw;
       left: -1.2vw;
+      @include px768() {
+        width: 12px;
+        height: 12px;
+      }
     }
   }
 }
@@ -128,6 +204,12 @@ img {
   @include fz_vw(202);
   font-weight: bold;
   -webkit-text-stroke: 1px #aaa;
+  @include px768() {
+    font-size: 110px; 
+  }
+  @include px540() {
+    @include fz_vw(280);
+  }
 }
 /*----------丸（黄色）------------*/
 .circle:before {
@@ -139,6 +221,10 @@ img {
   background-color: $yellow-color;
   position: absolute;
   z-index: -1;
+  @include px414() {
+    width: 29vw;
+    height: 29vw;
+  }
 }
 /*----------水玉の飾り------------*/
 .dott {
@@ -151,14 +237,26 @@ img {
     width: 26vw;
     height: 16vw;
     z-index: -1;
+    @include px768() {
+      width: 32vw;
+    }
+    @include px540() {
+      width: 40vw;
+    }
   }
   &:before {  // 左上のドット
     top: -5vw;
     left: -7vw;
+    @include px540() {
+      top: -7vw;
+    }
   }
   &:after {  // 右下のドット
     bottom: -5vw;
     right: -7vw;
+    @include px540() {
+      bottom: -7vw;
+    }
   }
 }
 /*---------h2見出し------------*/
@@ -168,6 +266,15 @@ img {
   font-weight: bold;
   letter-spacing: 0.1em;
   display: inline-block;
+  @include px1000() {
+    @include fz_vw(60);
+  }
+  @include px768() {
+    font-size: 32px;
+  }
+  @include px414() {
+    font-size: 26px;
+  }
   &:after {
     content: '';
     display: block;
@@ -175,6 +282,9 @@ img {
     height: 1px;
     background-color: $naivy-color;
     margin: 3vw auto 0 auto;
+    @include px768() {
+      margin-top: 23px;
+    }
   }
 }
 /*---------h3見出し------------*/
@@ -184,6 +294,12 @@ img {
   font-weight: bold;
   letter-spacing: 0.1em;
   display: inline-block;
+  @include px1000() {
+    @include fz_vw(46);
+  }
+  @include px768() {
+    font-size: 28px;
+  }
   &:after {
     content: '';
     display: block;
@@ -191,6 +307,10 @@ img {
     height: 1px;
     background-color: $naivy-color;
     margin: 1.8vw auto 0 auto;
+    @include px768() {
+      width: 70px;
+      margin: 25px auto 0 auto;
+    }
   }
 }
 /*---------h4見出し------------*/
@@ -199,6 +319,13 @@ img {
   @include fz_vw(23);
   font-weight: bold;
   letter-spacing: 0.25em;
+  @include px1000() {
+    @include fz_vw(32);
+  }
+  @include px768() {
+    font-size: 20px;
+    margin-top: 23px;
+  }
   &:after {
     content: '';
     margin: 2vw auto 0 auto;
@@ -206,11 +333,17 @@ img {
     width: 6vw;
     height: 1px;
     background-color: $naivy-color;
+    @include px768() {
+      margin-top: 23px;
+    }
   }
 }
 /*---------お問い合わせ----------*/
 .contact {
   padding: 15vw 0;
+  @include px768() {
+    margin-top: 100px;
+  }
   .dott {
     &:before {
       top: -3vw;
@@ -227,29 +360,69 @@ img {
     background-color: $gray-color;
     text-align: center;
     position: relative;
+    @include px1000() {
+      padding: 5vw 4vw 5vw 5vw;
+    }
+    @include px768() {
+      padding: 3vw 4vw 3vw 5vw;
+    }
+    .h3_index {
+      @include px768() {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
   &_wrap {
     margin-top: 5vw;
     display: flex;
     justify-content: space-between;
+    @include px768() {
+      flex-direction: column;
+    }
     &_tel, &_fax {
       display: flex;
       align-items: center;
+      @include px768() {
+        width: 315px;
+        margin: 0 auto 40px auto;
+      }
       img {
         width: 4.5vw;
         height: 4.5vw;
         margin-right: 1.8vw;
+        @include px768() {
+          width: 50px;
+          height: 50px;
+        }
       }
       &_index {
         @include fz_vw(18);
         font-weight: bold;
         letter-spacing: .15em;
         margin-bottom: 1vw;
+        @include px1440() {
+          font-size: 18px;
+        }
+        @include px1280() {
+          font-size: 14px;
+        }
+        @include px768() {
+          font-size: 16px;
+        }
       }
       &_num {
         @include fz_vw(34);
         font-weight: bold;
         letter-spacing: .1em;
+        @include px1000() {
+          @include fz_vw(42);
+        }
+        @include px768() {
+          font-size: 32px;
+        }
       }
     }
   }
@@ -269,6 +442,9 @@ img {
   }
   &_copyright {
     @include fz_vw(18);
+    @include px1440() {
+      font-size: 18px;
+    }
   }
 }
 
@@ -282,6 +458,12 @@ img {
     width: 100%;
     height: 62vw;  
     margin-bottom: 10vw;
+    @include px1000() {
+      height: 67vw;
+    }
+    @include px768() {
+      height: 622px;
+    }
     .dott {
       &:before {
         opacity: .1;
@@ -293,15 +475,53 @@ img {
       padding: 8vw 0;
       text-align: center;
       background-image: url(../img/top_about_bgimage.png);
+      background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 100%;
       position: relative;
+      @include px1280() {
+        width: 768px;
+      }
+      @include px768() {
+        width: 100%;
+        height: 660px;
+        padding: 100px 0;
+        background-size: cover;
+      }
+      @include px540() {
+        height: 640px;
+      }
       &_text {
         @include fz_vw(17);
         font-weight: bold;
         letter-spacing: 0.25em;
         line-height: 2.3;
         margin: 3vw 0 6.4vw 0;
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1280() {
+          margin: 2vw 0 4.5vw 0;
+        }
+        @include px768() {
+          margin: 15px 0 60px 0;
+          &:nth-of-type(2) {
+            margin: 15px 0 40px 0;
+          }
+        }
+        @include px540() {
+          font-size: 14px;
+          letter-spacing: 0.2em;
+        }
+        @include px340() {
+          letter-spacing: 0.1em;
+        }
+        .sc_br {
+          display: none;
+          @include px768() {
+            display: block;
+          }
+        }
       }
       &_btn {
         @include fz_vw(17);
@@ -310,6 +530,16 @@ img {
         border-radius: 15px;
         padding: 1vw 6vw;
         box-shadow: 2px 5px 6px rgba(51,51,51,0.4);
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1000() {
+          border-radius: 30px;
+          padding: 10px 60px;
+        }
+        @include px540() {
+          font-size: 14px;
+        }
       }
     }
     .outline {
@@ -317,10 +547,23 @@ img {
       top: -9.6vw;
       right: -0.9vw;
       z-index: 10;
+      @include px768() {
+        top: -75px;
+      }
+      @include px540() {
+        top: -13.6vw;
+      }
     }
     .circle:before {
       top: 4.2vw;
       right: 6.7vw;
+      @include px768() {
+        top: 30px;
+      }
+      @include px540() {
+        top: 6vw;
+        right: 3vw;
+      }
     }
   }
   /*---------施工事例----------*/
@@ -328,20 +571,42 @@ img {
     width: 100%;
     height: 62vw;
     position: relative;
+    @include px1000() {
+      height: 70vw;
+    }
+    // @include px768() {
+    //   height: 265vw;
+    // }
     .outline {
       position: absolute;
       right: -0.9vw;
+      // @include px1000() {
+      //   top: 8vw;
+      //   @include fz_vw(300);
+      // }
     }
     &:after {
       content: '';
       display: inline-block;
       width: 100%;
-      height: 27vw;
+      height: 29vw;
       background-color: $naivy-color;
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 0;
       z-index: -5;
+      @include px1000() {
+        height: 34vw;
+      }
+      // @include px1000() {
+      //   width: 60vw;
+      //   right: 0;
+      //   height: 166vw;
+      // }
+      // @include px768() {
+      //   width: 67vw;
+      //   height: 228vw;
+      // }
     }
     &_contents {
       position: relative;
@@ -361,28 +626,68 @@ img {
 /*---------施工事例パネル----------*/
 .cases_contents {
   &_wrap {
-    position: absolute;
-    top: 13vw;
-    left: 9.6vw;
+    padding: 16vw 9.2vw 0 9.2vw;
     display: flex;
+    @include px1000() {
+      padding: 16vw 7vw 0 7vw;
+    }
+    // @include px1000() {
+    //   padding: 27.5vw 0 0 0;
+    //   flex-direction: column;
+    // }
   }
   &_panel {
-    width: 100%;
-    padding: 3.2vw;
+    width: calc(100vw/3);
+    padding: 0 3vw;
+    @include px1000() {
+      padding: 0 2vw;
+    }
+    // @include px1000() {
+    //   width: 34vw;
+    //   margin: 0 auto 5vw auto;
+    //   padding: 0;
+    // }
+    // @include px768() {
+    //   width: 50vw;
+    // }
+    // @include px540() {
+    //   width: 65vw;
+    // }
     &_img {
-      width: 20.9vw;
+      width: 100%;
     }
     &_client {
       background-color: $white-color;
       width: 69%;
-      padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+      height: 6vw;
+      padding: 1.5vw;
       position: relative;
       top: -2.3vw;
       left: 0.2vw;
+      @include px1440() {
+        height: 86px;
+      }
+      @include px1366() {
+        width: 75%;
+      }
+      @include px1000() {
+        width: 80%;
+        padding: 1.7vw 1.3vw 0 1.3vw;
+      }
+      // @include px1000() {
+      //   width: 69%;
+      //   box-shadow: 0 2px 4px #999;
+      //   top: -4vw;
+      //   padding: 2vw;
+      // }
       &_adress, &_name {
         @include fz_vw(14);
+        width: 100%;
         line-height: 1.8;
         letter-spacing: 0.1em;
+        @include px1440() {
+          font-size: 14px;
+        }
       }
       &_name {
         line-height: 1.2;
@@ -396,6 +701,15 @@ img {
       @include fz_vw(13);
       letter-spacing: 0.1em;
       margin-top: 1.2vw;
+      @include px1440() {
+        font-size: 13px;
+        padding: 11px 43px;
+        border-radius: 14px;
+      }
+      // @include px1000() {
+      //   margin-top: 0;
+      //   box-shadow: 0 2px 4px #999;
+      // }
     }
   }
   &_panel_1 {
@@ -406,12 +720,20 @@ img {
   &_panel_2 {
     position: relative;
     top: 3.4vw;
+    .cases_contents_panel_client {
+      left: 0.05vw; 
+      padding: 1vw 1.5vw 0 1.5vw;
+    }
   }
   &_panel_3 {
     position: relative;
     top: 6.4vw;
-  }
+    .cases_contents_panel_client {
+      left: 0.05vw;
+    }
+  } 
 }
+ 
 /*==========================================
   事業内容ページ
 ==========================================*/

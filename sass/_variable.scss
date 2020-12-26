@@ -15,8 +15,61 @@ $contents-sp: 95%;
   $rate: 100 / $viewport;
   @return $rate * $size * 1vw;
 }
-
 @mixin fz_vw($font_size:10){
   font-size: $font_size * 1px;
   font-size: get_vw($font_size);
 }
+
+//メディアクエリのブレークポイント
+$breakpoints: (
+  'px1440': 'screen and (max-width: 1440px)',
+  'px1366': 'screen and (max-width: 1366px)',
+  'px1280': 'screen and (max-width: 1280px)',
+  'px1000': 'screen and (max-width: 1000px)',
+  'px768': 'screen and (max-width: 768px)',
+  'px540': 'screen and (max-width: 540px)',
+  'px414': 'screen and (max-width: 414px)',
+  'px340': 'screen and (max-width: 340px)'
+) !default;
+
+@mixin px1440($breakpoint: px1440) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px1366($breakpoint: px1366) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px1280($breakpoint: px1280) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px1000($breakpoint: px1000) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px768($breakpoint: px768) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px540($breakpoint: px540) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px414($breakpoint: px414) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px340($breakpoint: px340) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
