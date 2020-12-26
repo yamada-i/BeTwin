@@ -26,7 +26,10 @@ $breakpoints: (
   'px1366': 'screen and (max-width: 1366px)',
   'px1280': 'screen and (max-width: 1280px)',
   'px1000': 'screen and (max-width: 1000px)',
-  'px768': 'screen and (max-width: 768px)'
+  'px768': 'screen and (max-width: 768px)',
+  'px540': 'screen and (max-width: 540px)',
+  'px414': 'screen and (max-width: 414px)',
+  'px340': 'screen and (max-width: 340px)'
 ) !default;
 
 @mixin px1440($breakpoint: px1440) {
@@ -50,6 +53,21 @@ $breakpoints: (
   }
 }
 @mixin px768($breakpoint: px768) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px540($breakpoint: px540) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px414($breakpoint: px414) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin px340($breakpoint: px340) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
