@@ -208,7 +208,10 @@ img {
     font-size: 110px; 
   }
   @include px540() {
-    @include fz_vw(280);
+    font-size: 78px;
+  }
+  @include px413() {
+    font-size: 68px;
   }
 }
 /*----------丸（黄色）------------*/
@@ -221,9 +224,9 @@ img {
   background-color: $yellow-color;
   position: absolute;
   z-index: -1;
-  @include px414() {
-    width: 29vw;
-    height: 29vw;
+  @include px768() {
+    width: 26vw;
+    height: 26vw;
   }
 }
 /*----------水玉の飾り------------*/
@@ -272,8 +275,8 @@ img {
   @include px768() {
     font-size: 32px;
   }
-  @include px414() {
-    font-size: 26px;
+  @include px413() {
+    font-size: 28px;
   }
   &:after {
     content: '';
@@ -462,7 +465,8 @@ img {
       height: 67vw;
     }
     @include px768() {
-      height: 622px;
+      height: 700px;
+      margin-bottom: 72px;
     }
     .dott {
       &:before {
@@ -551,7 +555,10 @@ img {
         top: -75px;
       }
       @include px540() {
-        top: -13.6vw;
+        top: -13vw;
+      }
+      @include px413() {
+        top: -45px;
       }
     }
     .circle:before {
@@ -572,18 +579,26 @@ img {
     height: 62vw;
     position: relative;
     @include px1000() {
-      height: 70vw;
+      height: 71vw;
     }
-    // @include px768() {
-    //   height: 265vw;
-    // }
+    @include px768() {
+      height: 1720px;
+    }
+    @include px413() {
+      height: 1560px;
+    }
     .outline {
       position: absolute;
       right: -0.9vw;
-      // @include px1000() {
-      //   top: 8vw;
-      //   @include fz_vw(300);
-      // }
+      @include px768() {
+        top: 45px;
+      }
+      @include px540() {
+        top: 45px;
+      }
+      @include px413() {
+        top: 56px;
+      }
     }
     &:after {
       content: '';
@@ -596,17 +611,19 @@ img {
       right: 0;
       z-index: -5;
       @include px1000() {
-        height: 34vw;
+        height: 37vw;
       }
-      // @include px1000() {
-      //   width: 60vw;
-      //   right: 0;
-      //   height: 166vw;
-      // }
-      // @include px768() {
-      //   width: 67vw;
-      //   height: 228vw;
-      // }
+      @include px768() {
+        width: 61vw;
+        right: 0;
+        height: 1498px;
+      }
+      @include px540() {
+        width: 70vw;
+      }
+      @include px413() {
+        height: 1380px;
+      }
     }
     &_contents {
       position: relative;
@@ -614,11 +631,19 @@ img {
         position: absolute;
         top: 4vw;
         left: 14vw;
+        @include px413() {
+          top: 7vw;
+          left: 10vw;
+        }
       }
       .circle:before {
         position: absolute;
         top: -3vw;
         left: -9vw;
+        @include px540() {
+          top: -6vw;
+          left: -5vw;
+        }
       }
     }
   }
@@ -631,30 +656,28 @@ img {
     @include px1000() {
       padding: 16vw 7vw 0 7vw;
     }
-    // @include px1000() {
-    //   padding: 27.5vw 0 0 0;
-    //   flex-direction: column;
-    // }
+    @include px768() {
+      padding: 148px 0 0 0;
+      flex-direction: column;
+    }
+    @include px540() {
+      padding: 118px 0 0 0;
+    }
   }
   &_panel {
     width: calc(100vw/3);
     padding: 0 3vw;
-    @include px1000() {
-      padding: 0 2vw;
+    @include px768() {
+      width: 307px;
+      margin: 0 auto 30px auto;
+      padding: 0;
     }
-    // @include px1000() {
-    //   width: 34vw;
-    //   margin: 0 auto 5vw auto;
-    //   padding: 0;
-    // }
-    // @include px768() {
-    //   width: 50vw;
-    // }
-    // @include px540() {
-    //   width: 65vw;
-    // }
+    @include px413() {
+      width: 260px;
+    }
     &_img {
       width: 100%;
+      margin: 0 auto 40px auto;
     }
     &_client {
       background-color: $white-color;
@@ -662,24 +685,29 @@ img {
       height: 6vw;
       padding: 1.5vw;
       position: relative;
-      top: -2.3vw;
+      top: -5vw;
       left: 0.2vw;
       @include px1440() {
         height: 86px;
       }
       @include px1366() {
         width: 75%;
+        top: -60px;
       }
       @include px1000() {
         width: 80%;
-        padding: 1.7vw 1.3vw 0 1.3vw;
+        padding: 1.7vw 1.3vw;
       }
-      // @include px1000() {
-      //   width: 69%;
-      //   box-shadow: 0 2px 4px #999;
-      //   top: -4vw;
-      //   padding: 2vw;
-      // }
+      @include px768() {
+        width: 69%;
+        top: -65px;
+        padding: 17px 10px;
+        box-shadow: 0 2px 4px #999;
+      }
+      @include px540() {
+        height: 95px;
+        padding: 25px 20px;
+      }
       &_adress, &_name {
         @include fz_vw(14);
         width: 100%;
@@ -698,6 +726,8 @@ img {
       background-color: $yellow-color;
       border-radius: 1vw;
       padding: .8vw 3vw;
+      position: relative;
+      top: -3vw;
       @include fz_vw(13);
       letter-spacing: 0.1em;
       margin-top: 1.2vw;
@@ -706,10 +736,11 @@ img {
         padding: 11px 43px;
         border-radius: 14px;
       }
-      // @include px1000() {
-      //   margin-top: 0;
-      //   box-shadow: 0 2px 4px #999;
-      // }
+      @include px768() {
+        position: relative;
+        top: -40px;
+        box-shadow: 0 2px 4px #999;
+      }
     }
   }
   &_panel_1 {
@@ -720,14 +751,26 @@ img {
   &_panel_2 {
     position: relative;
     top: 3.4vw;
+    @include px768() {
+      position: static;
+    }
     .cases_contents_panel_client {
       left: 0.05vw; 
-      padding: 1vw 1.5vw 0 1.5vw;
+      padding: 1vw 1.5vw;
+      @include px768() {
+        padding: 10px;
+      }
+      @include px540() {
+        padding: 17px 20px;
+      }
     }
   }
   &_panel_3 {
     position: relative;
     top: 6.4vw;
+    @include px768() {
+      position: static;
+    }
     .cases_contents_panel_client {
       left: 0.05vw;
     }

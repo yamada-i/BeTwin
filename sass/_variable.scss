@@ -28,7 +28,7 @@ $breakpoints: (
   'px1000': 'screen and (max-width: 1000px)',
   'px768': 'screen and (max-width: 768px)',
   'px540': 'screen and (max-width: 540px)',
-  'px414': 'screen and (max-width: 414px)',
+  'px413': 'screen and (max-width: 413px)',
   'px340': 'screen and (max-width: 340px)'
 ) !default;
 
@@ -62,7 +62,7 @@ $breakpoints: (
     @content;
   }
 }
-@mixin px414($breakpoint: px414) {
+@mixin px413($breakpoint: px413) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
