@@ -1,0 +1,69 @@
+/*----------メインビジュアル------------*/
+.mv {
+  width: 100%;
+  height: 44vw;
+  margin-bottom: 10vw;
+  position: relative;
+  @include px1000() {
+    height: 48vw;
+  }
+  @include px768() {
+    height: 500px;
+    margin-bottom: 150px;
+  }
+  &_img {
+    width: 76%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @include px1000() {
+      width: 85%;
+    }
+    @include px768() {
+      img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        object-position: 50% 100%;
+      }
+    }
+  }
+  &_back {  // 紺背景
+    width: 80vw;
+    height: 33vw;
+    background-color: $naivy-color;
+    position: absolute;
+    top: 5.8vw;
+    left: 0;
+    z-index: -1;
+    @include px1000() {
+      height: 38vw;
+    }
+    @include px768() {
+      height: 420px;
+      top: 45px;
+    }
+  }
+  &:after {  // ドット
+    content: '';
+    display: inline-block;
+    background-image: url(../img/bg_navydot.png);
+    background-size: 82%;
+    position: absolute;
+    bottom: 0;
+    right: 5.5vw;
+    width: 32vw;
+    height: 18vw;
+    z-index: -2;
+    @include px1000() {
+      width: 28vw;
+      right: 10vw;
+    }
+    @include px768() {
+      width: 180px;
+      height: 138px;
+      background-size: 120%;
+    }
+  }
+}

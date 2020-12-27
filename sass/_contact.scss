@@ -1,0 +1,89 @@
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+  @include px768() {
+    margin-top: 100px;
+  }
+  .dott {
+    &:before {
+      top: -3vw;
+    }
+    &:after {
+      opacity: .1;
+      bottom: -3vw;
+    }
+  }
+  &_contents {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5vw 7vw 5vw 8vw;
+    background-color: $gray-color;
+    text-align: center;
+    position: relative;
+    @include px1000() {
+      padding: 5vw 4vw 5vw 5vw;
+    }
+    @include px768() {
+      padding: 3vw 4vw 3vw 5vw;
+    }
+    .h3_index {
+      @include px768() {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &_wrap {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    @include px768() {
+      flex-direction: column;
+    }
+    &_tel, &_fax {
+      display: flex;
+      align-items: center;
+      @include px768() {
+        width: 315px;
+        margin: 0 auto 40px auto;
+      }
+      img {
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 1.8vw;
+        @include px768() {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &_index {
+        @include fz_vw(18);
+        font-weight: bold;
+        letter-spacing: .15em;
+        margin-bottom: 1vw;
+        @include px1440() {
+          font-size: 18px;
+        }
+        @include px1280() {
+          font-size: 14px;
+        }
+        @include px768() {
+          font-size: 16px;
+        }
+      }
+      &_num {
+        @include fz_vw(34);
+        font-weight: bold;
+        letter-spacing: .1em;
+        @include px1000() {
+          @include fz_vw(42);
+        }
+        @include px768() {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/*----------ヘッダー------------*/
+.header {
+  width: $contents-pc;
+  margin: 0 auto;
+  padding: 2vw 0 3vw 0;
+  &_top {
+    @include px768() {
+      padding-top: 2vw;
+    }
+    p {
+      @include fz_vw(15);
+      letter-spacing: 0.1em;
+      @include px1280() {
+        font-size: 14px;
+      }
+      @include px768() {
+        display: none;
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 0 7.2vw;
+    @include px1000() {
+      padding: 0 3vw;
+    }
+    &_logo {
+      width: 17%;
+      @include px1366() {
+        width: 20%;
+      }
+      @include px768() {
+        width: 25%;
+      }
+    }
+  }
+}

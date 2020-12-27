@@ -1,0 +1,21 @@
+/*----------ナビ------------*/
+.nav {
+  .menu {
+    display: flex;
+    &_list {
+      padding-left: 3.4vw;
+      a {
+        color: $black-color;
+        @include fz_vw(17);
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1000() {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+/*==========================================
+  共通
+==========================================*/
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: $black-color;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+}
+a {
+  color: $black-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+/*----------見出し（中抜き）------------*/
+.outline {
+  display: inline-block;
+  color: transparent;
+  @include fz_vw(202);
+  font-weight: bold;
+  -webkit-text-stroke: 1px #aaa;
+  @include px768() {
+    font-size: 110px; 
+  }
+  @include px540() {
+    font-size: 78px;
+  }
+  @include px413() {
+    font-size: 68px;
+  }
+}
+/*----------丸（黄色）------------*/
+.circle:before {
+  content: '';
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: $yellow-color;
+  position: absolute;
+  z-index: -1;
+  @include px768() {
+    width: 26vw;
+    height: 26vw;
+  }
+}
+/*----------水玉の飾り------------*/
+.dott {
+  &:before, &:after {  // ドット
+    content: '';
+    display: inline-block;
+    background-image: url(../img/bg_navydot.png);
+    background-size: 100%;
+    position: absolute;
+    width: 26vw;
+    height: 16vw;
+    z-index: -1;
+    @include px768() {
+      width: 32vw;
+    }
+    @include px540() {
+      width: 40vw;
+    }
+  }
+  &:before {  // 左上のドット
+    top: -5vw;
+    left: -7vw;
+    @include px540() {
+      top: -7vw;
+    }
+  }
+  &:after {  // 右下のドット
+    bottom: -5vw;
+    right: -7vw;
+    @include px540() {
+      bottom: -7vw;
+    }
+  }
+}
+/*---------h2見出し------------*/
+.h2_index {
+  color: $naivy-color;
+  @include fz_vw(48);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  @include px1000() {
+    @include fz_vw(60);
+  }
+  @include px768() {
+    font-size: 32px;
+  }
+  @include px413() {
+    font-size: 28px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 11vw;
+    height: 1px;
+    background-color: $naivy-color;
+    margin: 3vw auto 0 auto;
+    @include px768() {
+      margin-top: 23px;
+    }
+  }
+}
+/*---------h3見出し------------*/
+.h3_index {
+  color: $naivy-color;
+  @include fz_vw(38);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  @include px1000() {
+    @include fz_vw(46);
+  }
+  @include px768() {
+    font-size: 28px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 6vw;
+    height: 1px;
+    background-color: $naivy-color;
+    margin: 1.8vw auto 0 auto;
+    @include px768() {
+      width: 70px;
+      margin: 25px auto 0 auto;
+    }
+  }
+}
+/*---------h4見出し------------*/
+.h4_index {
+  color: $naivy-color;
+  @include fz_vw(23);
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  @include px1000() {
+    @include fz_vw(32);
+  }
+  @include px768() {
+    font-size: 20px;
+    margin-top: 23px;
+  }
+  &:after {
+    content: '';
+    margin: 2vw auto 0 auto;
+    display: block;
+    width: 6vw;
+    height: 1px;
+    background-color: $naivy-color;
+    @include px768() {
+      margin-top: 23px;
+    }
+  }
+} 

@@ -1,0 +1,42 @@
+/*-----------キャッチコピー------------*/
+.mv_catchcopy {
+  @include fz_vw(48);
+  color: $white-color;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: .07em;
+  line-height: 1.6;
+  top: 19.8vw;
+  left: 9vw;
+  z-index: 2;
+  @include px1000() {
+    @include fz_vw(58);
+    top: 22vw;
+  }
+  @include px768() {
+    font-size: 38px;
+    top: 230px;
+  }
+  .cc_br {
+    display: none;
+    @include px768() {
+      display: block;
+    }
+  }
+  &:before {  //黄色の丸（小）
+    content: '';
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $yellow-color;
+    position: absolute;
+    top: -1.2vw;
+    left: -1.2vw;
+    @include px768() {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+  

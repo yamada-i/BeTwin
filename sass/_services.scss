@@ -1,0 +1,123 @@
+/*==========================================
+  トップページ
+==========================================*/
+#top {
+  /*---------BeTwinについて----------*/
+  .services {
+    position: relative;
+    width: 100%;
+    height: 62vw;  
+    margin-bottom: 10vw;
+    @include px1000() {
+      height: 67vw;
+    }
+    @include px768() {
+      height: 700px;
+      margin-bottom: 72px;
+    }
+    .dott {
+      &:before {
+        opacity: .1;
+      }
+    }
+    &_contents {
+      width: 75%;
+      margin: 18vw auto 0 auto;
+      padding: 8vw 0;
+      text-align: center;
+      background-image: url(../img/top_about_bgimage.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      @include px1280() {
+        width: 768px;
+      }
+      @include px768() {
+        width: 100%;
+        height: 660px;
+        padding: 100px 0;
+        background-size: cover;
+      }
+      @include px540() {
+        height: 640px;
+      }
+      &_text {
+        @include fz_vw(17);
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        line-height: 2.3;
+        margin: 3vw 0 6.4vw 0;
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1280() {
+          margin: 2vw 0 4.5vw 0;
+        }
+        @include px768() {
+          margin: 15px 0 60px 0;
+          &:nth-of-type(2) {
+            margin: 15px 0 40px 0;
+          }
+        }
+        @include px540() {
+          font-size: 14px;
+          letter-spacing: 0.2em;
+        }
+        @include px340() {
+          letter-spacing: 0.1em;
+        }
+        .sc_br {
+          display: none;
+          @include px768() {
+            display: block;
+          }
+        }
+      }
+      &_btn {
+        @include fz_vw(17);
+        letter-spacing: 0.15em;
+        background-color: $yellow-color;
+        border-radius: 15px;
+        padding: 1vw 6vw;
+        box-shadow: 2px 5px 6px rgba(51,51,51,0.4);
+        @include px1366() {
+          font-size: 16px;
+        }
+        @include px1000() {
+          border-radius: 30px;
+          padding: 10px 60px;
+        }
+        @include px540() {
+          font-size: 14px;
+        }
+      }
+    }
+    .outline {
+      position: absolute;
+      top: -9.6vw;
+      right: -0.9vw;
+      z-index: 10;
+      @include px768() {
+        top: -75px;
+      }
+      @include px540() {
+        top: -13vw;
+      }
+      @include px413() {
+        top: -45px;
+      }
+    }
+    .circle:before {
+      top: 4.2vw;
+      right: 6.7vw;
+      @include px768() {
+        top: 30px;
+      }
+      @include px540() {
+        top: 6vw;
+        right: 3vw;
+      }
+    }
+  }
+}

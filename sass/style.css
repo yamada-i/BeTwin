@@ -59,265 +59,6 @@ img {
   width: 100%;
 }
 
-/*----------ヘッダー------------*/
-.header {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2vw 0 3vw 0;
-}
-
-@media screen and (max-width: 768px) {
-  .header_top {
-    padding-top: 2vw;
-  }
-}
-
-.header_top p {
-  font-size: 15px;
-  font-size: 1.04167vw;
-  letter-spacing: 0.1em;
-}
-
-@media screen and (max-width: 1280px) {
-  .header_top p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header_top p {
-    display: none;
-  }
-}
-
-.header_bottom {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  padding: 0 7.2vw;
-}
-
-@media screen and (max-width: 1000px) {
-  .header_bottom {
-    padding: 0 3vw;
-  }
-}
-
-.header_bottom_logo {
-  width: 17%;
-}
-
-@media screen and (max-width: 1366px) {
-  .header_bottom_logo {
-    width: 20%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header_bottom_logo {
-    width: 25%;
-  }
-}
-
-/*----------ナビ------------*/
-.nav .menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav .menu_list {
-  padding-left: 3.4vw;
-}
-
-.nav .menu_list a {
-  color: #333;
-  font-size: 17px;
-  font-size: 1.18056vw;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 1366px) {
-  .nav .menu_list a {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .nav .menu_list a {
-    font-size: 14px;
-  }
-}
-
-/*----------メインビジュアル------------*/
-.mv {
-  width: 100%;
-  height: 44vw;
-  margin-bottom: 10vw;
-  position: relative;
-  /*-----------キャッチコピー------------*/
-}
-
-@media screen and (max-width: 1000px) {
-  .mv {
-    height: 48vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mv {
-    height: 500px;
-    margin-bottom: 150px;
-  }
-}
-
-.mv_img {
-  width: 76%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-@media screen and (max-width: 1000px) {
-  .mv_img {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mv_img img {
-    width: 100%;
-    height: 420px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 50% 100%;
-       object-position: 50% 100%;
-  }
-}
-
-.mv_back {
-  width: 80vw;
-  height: 33vw;
-  background-color: #141f50;
-  position: absolute;
-  top: 5.8vw;
-  left: 0;
-  z-index: -1;
-}
-
-@media screen and (max-width: 1000px) {
-  .mv_back {
-    height: 38vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mv_back {
-    height: 420px;
-    top: 45px;
-  }
-}
-
-.mv:after {
-  content: '';
-  display: inline-block;
-  background-image: url(../img/bg_navydot.png);
-  background-size: 82%;
-  position: absolute;
-  bottom: 0;
-  right: 5.5vw;
-  width: 32vw;
-  height: 18vw;
-  z-index: -2;
-}
-
-@media screen and (max-width: 1000px) {
-  .mv:after {
-    width: 28vw;
-    right: 10vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mv:after {
-    width: 180px;
-    height: 138px;
-    background-size: 120%;
-  }
-}
-
-.mv_catchcopy {
-  font-size: 48px;
-  font-size: 3.33333vw;
-  color: #fff;
-  font-weight: bold;
-  position: absolute;
-  letter-spacing: .07em;
-  line-height: 1.6;
-  top: 19.8vw;
-  left: 9vw;
-  z-index: 2;
-}
-
-@media screen and (max-width: 1000px) {
-  .mv_catchcopy {
-    font-size: 58px;
-    font-size: 4.02778vw;
-    top: 22vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mv_catchcopy {
-    font-size: 38px;
-    top: 230px;
-  }
-}
-
-.mv_catchcopy .cc_br {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .mv_catchcopy .cc_br {
-    display: block;
-  }
-}
-
-.mv_catchcopy:before {
-  content: '';
-  width: 1.2vw;
-  height: 1.2vw;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #fff579;
-  position: absolute;
-  top: -1.2vw;
-  left: -1.2vw;
-}
-
-@media screen and (max-width: 768px) {
-  .mv_catchcopy:before {
-    width: 12px;
-    height: 12px;
-  }
-}
-
 /*----------見出し（中抜き）------------*/
 .outline {
   display: inline-block;
@@ -532,59 +273,38 @@ img {
   }
 }
 
-/*---------お問い合わせ----------*/
-.contact {
-  padding: 15vw 0;
-}
-
-@media screen and (max-width: 768px) {
-  .contact {
-    margin-top: 100px;
-  }
-}
-
-.contact .dott:before {
-  top: -3vw;
-}
-
-.contact .dott:after {
-  opacity: .1;
-  bottom: -3vw;
-}
-
-.contact_contents {
-  width: 75%;
+/*----------ヘッダー------------*/
+.header {
+  width: 90%;
   margin: 0 auto;
-  padding: 5vw 7vw 5vw 8vw;
-  background-color: #f5f5f5;
-  text-align: center;
-  position: relative;
+  padding: 2vw 0 3vw 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .contact_contents {
-    padding: 5vw 4vw 5vw 5vw;
+@media screen and (max-width: 768px) {
+  .header_top {
+    padding-top: 2vw;
+  }
+}
+
+.header_top p {
+  font-size: 15px;
+  font-size: 1.04167vw;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1280px) {
+  .header_top p {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contact_contents {
-    padding: 3vw 4vw 3vw 5vw;
+  .header_top p {
+    display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact_contents .h3_index {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-.contact_wrap {
-  margin-top: 5vw;
+.header_bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -593,120 +313,222 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 7.2vw;
 }
 
-@media screen and (max-width: 768px) {
-  .contact_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (max-width: 1000px) {
+  .header_bottom {
+    padding: 0 3vw;
   }
 }
 
-.contact_wrap_tel, .contact_wrap_fax {
+.header_bottom_logo {
+  width: 17%;
+}
+
+@media screen and (max-width: 1366px) {
+  .header_bottom_logo {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_bottom_logo {
+    width: 25%;
+  }
+}
+
+/*----------ナビ------------*/
+.nav .menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel, .contact_wrap_fax {
-    width: 315px;
-    margin: 0 auto 40px auto;
-  }
+.nav .menu_list {
+  padding-left: 3.4vw;
 }
 
-.contact_wrap_tel img, .contact_wrap_fax img {
-  width: 4.5vw;
-  height: 4.5vw;
-  margin-right: 1.8vw;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel img, .contact_wrap_fax img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-.contact_wrap_tel_index, .contact_wrap_fax_index {
-  font-size: 18px;
-  font-size: 1.25vw;
+.nav .menu_list a {
+  color: #333;
+  font-size: 17px;
+  font-size: 1.18056vw;
+  letter-spacing: 0.1em;
   font-weight: bold;
-  letter-spacing: .15em;
-  margin-bottom: 1vw;
 }
 
-@media screen and (max-width: 1440px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
+@media screen and (max-width: 1366px) {
+  .nav .menu_list a {
     font-size: 16px;
   }
 }
 
-.contact_wrap_tel_num, .contact_wrap_fax_num {
-  font-size: 34px;
-  font-size: 2.36111vw;
-  font-weight: bold;
-  letter-spacing: .1em;
+@media screen and (max-width: 1000px) {
+  .nav .menu_list a {
+    font-size: 14px;
+  }
+}
+
+/*----------メインビジュアル------------*/
+.mv {
+  width: 100%;
+  height: 44vw;
+  margin-bottom: 10vw;
+  position: relative;
 }
 
 @media screen and (max-width: 1000px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 42px;
-    font-size: 2.91667vw;
+  .mv {
+    height: 48vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 32px;
+  .mv {
+    height: 500px;
+    margin-bottom: 150px;
   }
 }
 
-/*---------フッター----------*/
-.footer {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 2vw;
+.mv_img {
+  width: 76%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.footer_logo {
-  width: 17%;
-  margin: 0 auto 3vw auto;
+@media screen and (max-width: 1000px) {
+  .mv_img {
+    width: 85%;
+  }
 }
 
-.footer_fb {
-  width: 3.3%;
-  margin: 0 auto 3vw auto;
+@media screen and (max-width: 768px) {
+  .mv_img img {
+    width: 100%;
+    height: 420px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+  }
 }
 
-.footer_copyright {
-  font-size: 18px;
-  font-size: 1.25vw;
+.mv_back {
+  width: 80vw;
+  height: 33vw;
+  background-color: #141f50;
+  position: absolute;
+  top: 5.8vw;
+  left: 0;
+  z-index: -1;
 }
 
-@media screen and (max-width: 1440px) {
-  .footer_copyright {
-    font-size: 18px;
+@media screen and (max-width: 1000px) {
+  .mv_back {
+    height: 38vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mv_back {
+    height: 420px;
+    top: 45px;
+  }
+}
+
+.mv:after {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/bg_navydot.png);
+  background-size: 82%;
+  position: absolute;
+  bottom: 0;
+  right: 5.5vw;
+  width: 32vw;
+  height: 18vw;
+  z-index: -2;
+}
+
+@media screen and (max-width: 1000px) {
+  .mv:after {
+    width: 28vw;
+    right: 10vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mv:after {
+    width: 180px;
+    height: 138px;
+    background-size: 120%;
+  }
+}
+
+/*-----------キャッチコピー------------*/
+.mv_catchcopy {
+  font-size: 48px;
+  font-size: 3.33333vw;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: .07em;
+  line-height: 1.6;
+  top: 19.8vw;
+  left: 9vw;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .mv_catchcopy {
+    font-size: 58px;
+    font-size: 4.02778vw;
+    top: 22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mv_catchcopy {
+    font-size: 38px;
+    top: 230px;
+  }
+}
+
+.mv_catchcopy .cc_br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mv_catchcopy .cc_br {
+    display: block;
+  }
+}
+
+.mv_catchcopy:before {
+  content: '';
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff579;
+  position: absolute;
+  top: -1.2vw;
+  left: -1.2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .mv_catchcopy:before {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -715,7 +537,6 @@ img {
 ==========================================*/
 #top {
   /*---------BeTwinについて----------*/
-  /*---------施工事例----------*/
 }
 
 #top .services {
@@ -901,6 +722,7 @@ img {
   }
 }
 
+/*---------施工事例----------*/
 #top .cases {
   width: 100%;
   height: 62vw;
@@ -1214,13 +1036,181 @@ img {
   left: 0.05vw;
 }
 
-/*==========================================
-  事業内容ページ
-==========================================*/
-/*==========================================
-  施工事例ページ
-==========================================*/
-/*==========================================
-  会社概要ページ
-==========================================*/
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 100px;
+  }
+}
+
+.contact .dott:before {
+  top: -3vw;
+}
+
+.contact .dott:after {
+  opacity: .1;
+  bottom: -3vw;
+}
+
+.contact_contents {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5vw 7vw 5vw 8vw;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_contents {
+    padding: 5vw 4vw 5vw 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents {
+    padding: 3vw 4vw 3vw 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents .h3_index {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.contact_wrap {
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact_wrap_tel, .contact_wrap_fax {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel, .contact_wrap_fax {
+    width: 315px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.contact_wrap_tel img, .contact_wrap_fax img {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-right: 1.8vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.contact_wrap_tel_index, .contact_wrap_fax_index {
+  font-size: 18px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  letter-spacing: .15em;
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 16px;
+  }
+}
+
+.contact_wrap_tel_num, .contact_wrap_fax_num {
+  font-size: 34px;
+  font-size: 2.36111vw;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 42px;
+    font-size: 2.91667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 32px;
+  }
+}
+
+/*---------フッター----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+.footer_logo {
+  width: 17%;
+  margin: 0 auto 3vw auto;
+}
+
+.footer_fb {
+  width: 3.3%;
+  margin: 0 auto 3vw auto;
+}
+
+.footer_copyright {
+  font-size: 18px;
+  font-size: 1.25vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer_copyright {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

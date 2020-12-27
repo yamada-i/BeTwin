@@ -1,0 +1,20 @@
+/*---------フッター----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2vw;
+  &_logo {
+    width: 17%;
+    margin: 0 auto 3vw auto;
+  }
+  &_fb {
+    width: 3.3%;
+    margin: 0 auto 3vw auto;
+  }
+  &_copyright {
+    @include fz_vw(18);
+    @include px1440() {
+      font-size: 18px;
+    }
+  }
+}
