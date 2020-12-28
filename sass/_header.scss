@@ -35,6 +35,13 @@
       @include px768() {
         width: 25%;
       }
+      @include px540() {
+        width: 22%;
+        margin-top: 10px;
+      }
+      @include px413() {
+        width: 30%;
+      }
     }
   }
 }
