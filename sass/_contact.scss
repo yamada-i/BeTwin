@@ -2,15 +2,24 @@
 .contact {
   padding: 15vw 0;
   @include px768() {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .dott {
     &:before {
       top: -3vw;
+      @include px768() {
+        background-size: 115%;
+        width: 36vw;
+        height: 26vw;
+        top: -7vw;
+      }
     }
     &:after {
       opacity: .1;
       bottom: -3vw;
+      @include px768() {
+        bottom: -5vw;
+      }
     }
   }
   &_contents {
@@ -24,7 +33,10 @@
       padding: 5vw 4vw 5vw 5vw;
     }
     @include px768() {
-      padding: 3vw 4vw 3vw 5vw;
+      width: 90%;
+    }
+    @include px413() {
+      width: 100%;
     }
     .h3_index {
       @include px768() {
@@ -32,6 +44,9 @@
         top: -80px;
         left: 50%;
         transform: translateX(-50%);
+      }
+      @include px540() {
+        width: 100%;
       }
     }
   }
@@ -57,6 +72,12 @@
           width: 50px;
           height: 50px;
         }
+        @include px540() {
+          margin-right: 5vw;
+        }
+        @include px413() {
+          margin-right: 3vw;
+        }
       }
       &_index {
         @include fz_vw(18);
@@ -72,6 +93,9 @@
         @include px768() {
           font-size: 16px;
         }
+        @include px540() {
+          font-size: 14px;
+        }
       }
       &_num {
         @include fz_vw(34);
@@ -82,6 +106,12 @@
         }
         @include px768() {
           font-size: 32px;
+        }
+        @include px540() {
+          font-size: 30px;
+        }
+        @include px413() {
+          font-size: 28px;
         }
       }
     }

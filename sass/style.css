@@ -1043,7 +1043,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .contact {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
 
@@ -1051,9 +1051,24 @@ img {
   top: -3vw;
 }
 
+@media screen and (max-width: 768px) {
+  .contact .dott:before {
+    background-size: 115%;
+    width: 36vw;
+    height: 26vw;
+    top: -7vw;
+  }
+}
+
 .contact .dott:after {
   opacity: .1;
   bottom: -3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .dott:after {
+    bottom: -5vw;
+  }
 }
 
 .contact_contents {
@@ -1073,7 +1088,13 @@ img {
 
 @media screen and (max-width: 768px) {
   .contact_contents {
-    padding: 3vw 4vw 3vw 5vw;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_contents {
+    width: 100%;
   }
 }
 
@@ -1084,6 +1105,12 @@ img {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_contents .h3_index {
+    width: 100%;
   }
 }
 
@@ -1140,6 +1167,18 @@ img {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 3vw;
+  }
+}
+
 .contact_wrap_tel_index, .contact_wrap_fax_index {
   font-size: 18px;
   font-size: 1.25vw;
@@ -1166,6 +1205,12 @@ img {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
 .contact_wrap_tel_num, .contact_wrap_fax_num {
   font-size: 34px;
   font-size: 2.36111vw;
@@ -1183,6 +1228,18 @@ img {
 @media screen and (max-width: 768px) {
   .contact_wrap_tel_num, .contact_wrap_fax_num {
     font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 28px;
   }
 }
 
