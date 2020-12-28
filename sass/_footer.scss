@@ -1,0 +1,46 @@
+/*---------フッター----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2vw;
+  @include px768() {
+    padding-bottom: 30px;
+  }
+  &_logo {
+    width: 17%;
+    margin: 0 auto 3vw auto;
+    @include px768() {
+      width: 26%;
+      margin: 0 auto 30px auto;
+    }
+    @include px540() {
+      width: 35%;
+    }
+    @include px413() {
+      width: 146px;
+    }
+  }
+  &_fb {
+    width: 3.3%;
+    margin: 0 auto 3vw auto;
+    @include px768() {
+      width: 6%;
+      margin: 0 auto 30px auto;
+    }
+    @include px540() {
+      width: 10%;
+    }
+    @include px413() {
+      width: 42px;
+    }
+  }
+  &_copyright {
+    @include fz_vw(18);
+    @include px1440() {
+      font-size: 18px;
+    }
+    @include px768() {
+      font-size: 14px;
+    }
+  }
+}

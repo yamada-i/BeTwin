@@ -59,6 +59,220 @@ img {
   width: 100%;
 }
 
+/*----------見出し（中抜き）------------*/
+.outline {
+  display: inline-block;
+  color: transparent;
+  font-size: 202px;
+  font-size: 14.02778vw;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  .outline {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .outline {
+    font-size: 78px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .outline {
+    font-size: 68px;
+  }
+}
+
+/*----------丸（黄色）------------*/
+.circle:before {
+  content: '';
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: #fff579;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .circle:before {
+    width: 26vw;
+    height: 26vw;
+  }
+}
+
+/*----------水玉の飾り------------*/
+.dott:before, .dott:after {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/bg_navydot.png);
+  background-size: 100%;
+  position: absolute;
+  width: 26vw;
+  height: 16vw;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .dott:before, .dott:after {
+    width: 32vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .dott:before, .dott:after {
+    width: 40vw;
+  }
+}
+
+.dott:before {
+  top: -5vw;
+  left: -7vw;
+}
+
+@media screen and (max-width: 540px) {
+  .dott:before {
+    top: -7vw;
+  }
+}
+
+.dott:after {
+  bottom: -5vw;
+  right: -7vw;
+}
+
+@media screen and (max-width: 540px) {
+  .dott:after {
+    bottom: -7vw;
+  }
+}
+
+/*---------h2見出し------------*/
+.h2_index {
+  color: #141f50;
+  font-size: 48px;
+  font-size: 3.33333vw;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+  .h2_index {
+    font-size: 60px;
+    font-size: 4.16667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2_index {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .h2_index {
+    font-size: 28px;
+  }
+}
+
+.h2_index:after {
+  content: '';
+  display: block;
+  width: 11vw;
+  height: 1px;
+  background-color: #141f50;
+  margin: 3vw auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .h2_index:after {
+    margin-top: 23px;
+  }
+}
+
+/*---------h3見出し------------*/
+.h3_index {
+  color: #141f50;
+  font-size: 38px;
+  font-size: 2.63889vw;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+  .h3_index {
+    font-size: 46px;
+    font-size: 3.19444vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h3_index {
+    font-size: 28px;
+  }
+}
+
+.h3_index:after {
+  content: '';
+  display: block;
+  width: 6vw;
+  height: 1px;
+  background-color: #141f50;
+  margin: 1.8vw auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .h3_index:after {
+    width: 70px;
+    margin: 25px auto 0 auto;
+  }
+}
+
+/*---------h4見出し------------*/
+.h4_index {
+  color: #141f50;
+  font-size: 23px;
+  font-size: 1.59722vw;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+}
+
+@media screen and (max-width: 1000px) {
+  .h4_index {
+    font-size: 32px;
+    font-size: 2.22222vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h4_index {
+    font-size: 20px;
+    margin-top: 23px;
+  }
+}
+
+.h4_index:after {
+  content: '';
+  margin: 2vw auto 0 auto;
+  display: block;
+  width: 6vw;
+  height: 1px;
+  background-color: #141f50;
+}
+
+@media screen and (max-width: 768px) {
+  .h4_index:after {
+    margin-top: 23px;
+  }
+}
+
 /*----------ヘッダー------------*/
 .header {
   width: 90%;
@@ -169,7 +383,6 @@ img {
   height: 44vw;
   margin-bottom: 10vw;
   position: relative;
-  /*-----------キャッチコピー------------*/
 }
 
 @media screen and (max-width: 1000px) {
@@ -261,6 +474,7 @@ img {
   }
 }
 
+/*-----------キャッチコピー------------*/
 .mv_catchcopy {
   font-size: 48px;
   font-size: 3.33333vw;
@@ -318,399 +532,11 @@ img {
   }
 }
 
-/*----------見出し（中抜き）------------*/
-.outline {
-  display: inline-block;
-  color: transparent;
-  font-size: 202px;
-  font-size: 14.02778vw;
-  font-weight: bold;
-  -webkit-text-stroke: 1px #aaa;
-}
-
-@media screen and (max-width: 768px) {
-  .outline {
-    font-size: 110px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .outline {
-    font-size: 280px;
-    font-size: 19.44444vw;
-  }
-}
-
-/*----------丸（黄色）------------*/
-.circle:before {
-  content: '';
-  display: inline-block;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  background-color: #fff579;
-  position: absolute;
-  z-index: -1;
-}
-
-@media screen and (max-width: 414px) {
-  .circle:before {
-    width: 29vw;
-    height: 29vw;
-  }
-}
-
-/*----------水玉の飾り------------*/
-.dott:before, .dott:after {
-  content: '';
-  display: inline-block;
-  background-image: url(../img/bg_navydot.png);
-  background-size: 100%;
-  position: absolute;
-  width: 26vw;
-  height: 16vw;
-  z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-  .dott:before, .dott:after {
-    width: 32vw;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .dott:before, .dott:after {
-    width: 40vw;
-  }
-}
-
-.dott:before {
-  top: -5vw;
-  left: -7vw;
-}
-
-@media screen and (max-width: 540px) {
-  .dott:before {
-    top: -7vw;
-  }
-}
-
-.dott:after {
-  bottom: -5vw;
-  right: -7vw;
-}
-
-@media screen and (max-width: 540px) {
-  .dott:after {
-    bottom: -7vw;
-  }
-}
-
-/*---------h2見出し------------*/
-.h2_index {
-  color: #141f50;
-  font-size: 48px;
-  font-size: 3.33333vw;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  display: inline-block;
-}
-
-@media screen and (max-width: 1000px) {
-  .h2_index {
-    font-size: 60px;
-    font-size: 4.16667vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .h2_index {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .h2_index {
-    font-size: 26px;
-  }
-}
-
-.h2_index:after {
-  content: '';
-  display: block;
-  width: 11vw;
-  height: 1px;
-  background-color: #141f50;
-  margin: 3vw auto 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  .h2_index:after {
-    margin-top: 23px;
-  }
-}
-
-/*---------h3見出し------------*/
-.h3_index {
-  color: #141f50;
-  font-size: 38px;
-  font-size: 2.63889vw;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  display: inline-block;
-}
-
-@media screen and (max-width: 1000px) {
-  .h3_index {
-    font-size: 46px;
-    font-size: 3.19444vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .h3_index {
-    font-size: 28px;
-  }
-}
-
-.h3_index:after {
-  content: '';
-  display: block;
-  width: 6vw;
-  height: 1px;
-  background-color: #141f50;
-  margin: 1.8vw auto 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  .h3_index:after {
-    width: 70px;
-    margin: 25px auto 0 auto;
-  }
-}
-
-/*---------h4見出し------------*/
-.h4_index {
-  color: #141f50;
-  font-size: 23px;
-  font-size: 1.59722vw;
-  font-weight: bold;
-  letter-spacing: 0.25em;
-}
-
-@media screen and (max-width: 1000px) {
-  .h4_index {
-    font-size: 32px;
-    font-size: 2.22222vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .h4_index {
-    font-size: 20px;
-    margin-top: 23px;
-  }
-}
-
-.h4_index:after {
-  content: '';
-  margin: 2vw auto 0 auto;
-  display: block;
-  width: 6vw;
-  height: 1px;
-  background-color: #141f50;
-}
-
-@media screen and (max-width: 768px) {
-  .h4_index:after {
-    margin-top: 23px;
-  }
-}
-
-/*---------お問い合わせ----------*/
-.contact {
-  padding: 15vw 0;
-}
-
-@media screen and (max-width: 768px) {
-  .contact {
-    margin-top: 100px;
-  }
-}
-
-.contact .dott:before {
-  top: -3vw;
-}
-
-.contact .dott:after {
-  opacity: .1;
-  bottom: -3vw;
-}
-
-.contact_contents {
-  width: 75%;
-  margin: 0 auto;
-  padding: 5vw 7vw 5vw 8vw;
-  background-color: #f5f5f5;
-  text-align: center;
-  position: relative;
-}
-
-@media screen and (max-width: 1000px) {
-  .contact_contents {
-    padding: 5vw 4vw 5vw 5vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_contents {
-    padding: 3vw 4vw 3vw 5vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_contents .h3_index {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
-.contact_wrap {
-  margin-top: 5vw;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.contact_wrap_tel, .contact_wrap_fax {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel, .contact_wrap_fax {
-    width: 315px;
-    margin: 0 auto 40px auto;
-  }
-}
-
-.contact_wrap_tel img, .contact_wrap_fax img {
-  width: 4.5vw;
-  height: 4.5vw;
-  margin-right: 1.8vw;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel img, .contact_wrap_fax img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-.contact_wrap_tel_index, .contact_wrap_fax_index {
-  font-size: 18px;
-  font-size: 1.25vw;
-  font-weight: bold;
-  letter-spacing: .15em;
-  margin-bottom: 1vw;
-}
-
-@media screen and (max-width: 1440px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 16px;
-  }
-}
-
-.contact_wrap_tel_num, .contact_wrap_fax_num {
-  font-size: 34px;
-  font-size: 2.36111vw;
-  font-weight: bold;
-  letter-spacing: .1em;
-}
-
-@media screen and (max-width: 1000px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 42px;
-    font-size: 2.91667vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 32px;
-  }
-}
-
-/*---------フッター----------*/
-.footer {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 2vw;
-}
-
-.footer_logo {
-  width: 17%;
-  margin: 0 auto 3vw auto;
-}
-
-.footer_fb {
-  width: 3.3%;
-  margin: 0 auto 3vw auto;
-}
-
-.footer_copyright {
-  font-size: 18px;
-  font-size: 1.25vw;
-}
-
-@media screen and (max-width: 1440px) {
-  .footer_copyright {
-    font-size: 18px;
-  }
-}
-
 /*==========================================
   トップページ
 ==========================================*/
 #top {
   /*---------BeTwinについて----------*/
-  /*---------施工事例----------*/
 }
 
 #top .services {
@@ -728,7 +554,8 @@ img {
 
 @media screen and (max-width: 768px) {
   #top .services {
-    height: 622px;
+    height: 700px;
+    margin-bottom: 72px;
   }
 }
 
@@ -867,7 +694,13 @@ img {
 
 @media screen and (max-width: 540px) {
   #top .services .outline {
-    top: -13.6vw;
+    top: -13vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #top .services .outline {
+    top: -45px;
   }
 }
 
@@ -889,6 +722,7 @@ img {
   }
 }
 
+/*---------施工事例----------*/
 #top .cases {
   width: 100%;
   height: 62vw;
@@ -897,13 +731,43 @@ img {
 
 @media screen and (max-width: 1000px) {
   #top .cases {
-    height: 70vw;
+    height: 71vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top .cases {
+    height: 1720px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #top .cases {
+    height: 1560px;
   }
 }
 
 #top .cases .outline {
   position: absolute;
   right: -0.9vw;
+}
+
+@media screen and (max-width: 768px) {
+  #top .cases .outline {
+    top: 45px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .cases .outline {
+    top: 45px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #top .cases .outline {
+    top: 56px;
+  }
 }
 
 #top .cases:after {
@@ -920,7 +784,27 @@ img {
 
 @media screen and (max-width: 1000px) {
   #top .cases:after {
-    height: 34vw;
+    height: 37vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top .cases:after {
+    width: 61vw;
+    right: 0;
+    height: 1498px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .cases:after {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #top .cases:after {
+    height: 1380px;
   }
 }
 
@@ -934,10 +818,24 @@ img {
   left: 14vw;
 }
 
+@media screen and (max-width: 413px) {
+  #top .cases_contents .h2_index {
+    top: 7vw;
+    left: 10vw;
+  }
+}
+
 #top .cases_contents .circle:before {
   position: absolute;
   top: -3vw;
   left: -9vw;
+}
+
+@media screen and (max-width: 540px) {
+  #top .cases_contents .circle:before {
+    top: -6vw;
+    left: -5vw;
+  }
 }
 
 /*---------施工事例パネル----------*/
@@ -955,19 +853,45 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cases_contents_wrap {
+    padding: 148px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cases_contents_wrap {
+    padding: 118px 0 0 0;
+  }
+}
+
 .cases_contents_panel {
   width: calc(100vw/3);
   padding: 0 3vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .cases_contents_panel {
-    padding: 0 2vw;
+    width: 307px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .cases_contents_panel {
+    width: 260px;
   }
 }
 
 .cases_contents_panel_img {
   width: 100%;
+  margin: 0 auto 40px auto;
 }
 
 .cases_contents_panel_client {
@@ -976,7 +900,7 @@ img {
   height: 6vw;
   padding: 1.5vw;
   position: relative;
-  top: -2.3vw;
+  top: -5vw;
   left: 0.2vw;
 }
 
@@ -989,13 +913,31 @@ img {
 @media screen and (max-width: 1366px) {
   .cases_contents_panel_client {
     width: 75%;
+    top: -60px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .cases_contents_panel_client {
     width: 80%;
-    padding: 1.7vw 1.3vw 0 1.3vw;
+    padding: 1.7vw 1.3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cases_contents_panel_client {
+    width: 69%;
+    top: -65px;
+    padding: 17px 10px;
+    -webkit-box-shadow: 0 2px 4px #999;
+            box-shadow: 0 2px 4px #999;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cases_contents_panel_client {
+    height: 95px;
+    padding: 25px 20px;
   }
 }
 
@@ -1022,6 +964,8 @@ img {
   background-color: #fff579;
   border-radius: 1vw;
   padding: .8vw 3vw;
+  position: relative;
+  top: -3vw;
   font-size: 13px;
   font-size: 0.90278vw;
   letter-spacing: 0.1em;
@@ -1036,6 +980,15 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cases_contents_panel_more {
+    position: relative;
+    top: -40px;
+    -webkit-box-shadow: 0 2px 4px #999;
+            box-shadow: 0 2px 4px #999;
+  }
+}
+
 .cases_contents_panel_1 .cases_contents_panel_client {
   left: 0.05vw;
 }
@@ -1045,9 +998,27 @@ img {
   top: 3.4vw;
 }
 
+@media screen and (max-width: 768px) {
+  .cases_contents_panel_2 {
+    position: static;
+  }
+}
+
 .cases_contents_panel_2 .cases_contents_panel_client {
   left: 0.05vw;
-  padding: 1vw 1.5vw 0 1.5vw;
+  padding: 1vw 1.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .cases_contents_panel_2 .cases_contents_panel_client {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cases_contents_panel_2 .cases_contents_panel_client {
+    padding: 17px 20px;
+  }
 }
 
 .cases_contents_panel_3 {
@@ -1055,17 +1026,299 @@ img {
   top: 6.4vw;
 }
 
+@media screen and (max-width: 768px) {
+  .cases_contents_panel_3 {
+    position: static;
+  }
+}
+
 .cases_contents_panel_3 .cases_contents_panel_client {
   left: 0.05vw;
 }
 
-/*==========================================
-  事業内容ページ
-==========================================*/
-/*==========================================
-  施工事例ページ
-==========================================*/
-/*==========================================
-  会社概要ページ
-==========================================*/
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 150px;
+    padding: 15vw 0 140px 0;
+  }
+}
+
+.contact .dott:before {
+  top: -3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .dott:before {
+    background-size: 115%;
+    width: 36vw;
+    height: 26vw;
+    top: -7vw;
+  }
+}
+
+.contact .dott:after {
+  opacity: .1;
+  bottom: -3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .dott:after {
+    bottom: -5vw;
+  }
+}
+
+.contact_contents {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5vw 7vw 5vw 8vw;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_contents {
+    padding: 5vw 4vw 5vw 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_contents {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents .h3_index {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_contents .h3_index {
+    width: 100%;
+  }
+}
+
+.contact_wrap {
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact_wrap_tel, .contact_wrap_fax {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel, .contact_wrap_fax {
+    width: 315px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.contact_wrap_tel img, .contact_wrap_fax img {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-right: 1.8vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 3vw;
+  }
+}
+
+.contact_wrap_tel_index, .contact_wrap_fax_index {
+  font-size: 18px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  letter-spacing: .15em;
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
+.contact_wrap_tel_num, .contact_wrap_fax_num {
+  font-size: 34px;
+  font-size: 2.36111vw;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 42px;
+    font-size: 2.91667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 28px;
+  }
+}
+
+/*---------フッター----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+
+.footer_logo {
+  width: 17%;
+  margin: 0 auto 3vw auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_logo {
+    width: 26%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer_logo {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer_logo {
+    width: 146px;
+  }
+}
+
+.footer_fb {
+  width: 3.3%;
+  margin: 0 auto 3vw auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_fb {
+    width: 6%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer_fb {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer_fb {
+    width: 42px;
+  }
+}
+
+.footer_copyright {
+  font-size: 18px;
+  font-size: 1.25vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer_copyright {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer_copyright {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

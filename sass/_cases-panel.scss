@@ -1,0 +1,128 @@
+/*---------施工事例パネル----------*/
+.cases_contents {
+  &_wrap {
+    padding: 16vw 9.2vw 0 9.2vw;
+    display: flex;
+    @include px1000() {
+      padding: 16vw 7vw 0 7vw;
+    }
+    @include px768() {
+      padding: 148px 0 0 0;
+      flex-direction: column;
+    }
+    @include px540() {
+      padding: 118px 0 0 0;
+    }
+  }
+  &_panel {
+    width: calc(100vw/3);
+    padding: 0 3vw;
+    @include px768() {
+      width: 307px;
+      margin: 0 auto 30px auto;
+      padding: 0;
+    }
+    @include px413() {
+      width: 260px;
+    }
+    &_img {
+      width: 100%;
+      margin: 0 auto 40px auto;
+    }
+    &_client {
+      background-color: $white-color;
+      width: 69%;
+      height: 6vw;
+      padding: 1.5vw;
+      position: relative;
+      top: -5vw;
+      left: 0.2vw;
+      @include px1440() {
+        height: 86px;
+      }
+      @include px1366() {
+        width: 75%;
+        top: -60px;
+      }
+      @include px1000() {
+        width: 80%;
+        padding: 1.7vw 1.3vw;
+      }
+      @include px768() {
+        width: 69%;
+        top: -65px;
+        padding: 17px 10px;
+        box-shadow: 0 2px 4px #999;
+      }
+      @include px540() {
+        height: 95px;
+        padding: 25px 20px;
+      }
+      &_adress, &_name {
+        @include fz_vw(14);
+        width: 100%;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+        @include px1440() {
+          font-size: 14px;
+        }
+      }
+      &_name {
+        line-height: 1.2;
+      }
+    }
+    &_more {
+      display: inline-block;
+      background-color: $yellow-color;
+      border-radius: 1vw;
+      padding: .8vw 3vw;
+      position: relative;
+      top: -3vw;
+      @include fz_vw(13);
+      letter-spacing: 0.1em;
+      margin-top: 1.2vw;
+      @include px1440() {
+        font-size: 13px;
+        padding: 11px 43px;
+        border-radius: 14px;
+      }
+      @include px768() {
+        position: relative;
+        top: -40px;
+        box-shadow: 0 2px 4px #999;
+      }
+    }
+  }
+  &_panel_1 {
+    .cases_contents_panel_client {
+      left: 0.05vw;
+    }
+  }
+  &_panel_2 {
+    position: relative;
+    top: 3.4vw;
+    @include px768() {
+      position: static;
+    }
+    .cases_contents_panel_client {
+      left: 0.05vw; 
+      padding: 1vw 1.5vw;
+      @include px768() {
+        padding: 10px;
+      }
+      @include px540() {
+        padding: 17px 20px;
+      }
+    }
+  }
+  &_panel_3 {
+    position: relative;
+    top: 6.4vw;
+    @include px768() {
+      position: static;
+    }
+    .cases_contents_panel_client {
+      left: 0.05vw;
+    }
+  } 
+}
