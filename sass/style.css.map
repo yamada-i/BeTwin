@@ -8,7 +8,7 @@
         "_parts.scss",
         "_header.scss",
         "_nav.scss",
-        "_mv.scss",
+        "_mv-image.scss",
         "_mv-catchcopy.scss",
         "_services.scss",
         "_cases-top.scss",
