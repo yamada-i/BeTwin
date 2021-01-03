@@ -25,24 +25,6 @@
       left: 19%;
       overflow: hidden;
     }
-    .pc_MV {
-      @include px768() {
-        display: none;
-      }
-    }
-    .sp_MV {
-      display: none;
-      @include px768() {
-        object-fit: cover;
-        display: block;
-        height: 435px;
-      }
-      @include px540() {
-        width: 100%;
-        object-position: 75% 100%;
-        transform: translateY(15px) scale(1.2);
-      }
-    }
   }
   &_back {  // 紺背景
     width: 80vw;
@@ -79,6 +61,43 @@
       width: 180px;
       height: 180px;
       background-size: 120%;
+    }
+  }
+}
+#top {
+  .pc_MV {
+    @include px768() {
+      display: none;
+    }
+  }
+  .sp_MV {
+    display: none;
+    @include px768() {
+      object-fit: cover;
+      display: block;
+      height: 435px;
+    }
+    @include px540() {
+      width: 100%;
+      object-position: 75% 100%;
+      transform: translateY(15px) scale(1.2);
+    }
+  }
+}
+#services {
+  .mv {
+    @include px768() {
+      margin-bottom: 100px;
+    }
+    @include px413() {
+      margin-bottom: 70px;
+    }
+    .jigyo_MV {
+      @include px768() {
+        height: 435px;
+        object-fit: cover;
+        object-position: 50% 100%;
+      }
     }
   }
 }
