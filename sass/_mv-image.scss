@@ -104,5 +104,8 @@
 #company {
   .mv {
     margin-bottom: 12vw;
+    @include px768() {
+      margin-bottom: 120px;
+    }
   }
 }
