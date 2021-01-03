@@ -84,7 +84,7 @@
     }
   }
 }
-#services {
+#services, #cases {
   .mv {
     @include px768() {
       margin-bottom: 100px;
@@ -92,12 +92,17 @@
     @include px413() {
       margin-bottom: 70px;
     }
-    .jigyo_MV {
+    .pc_MV {
       @include px768() {
         height: 435px;
         object-fit: cover;
         object-position: 50% 100%;
       }
     }
+  }
+}
+#company {
+  .mv {
+    margin-bottom: 12vw;
   }
 }

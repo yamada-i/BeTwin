@@ -1,0 +1,41 @@
+.overview {
+  position: relative;
+  .outline {
+    position: absolute;
+    top: -2.5vw;
+    right: -0.2vw;
+  }
+  h3 {
+    @include fz_vw(34);
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 5.5vw;
+  }
+  &_contents {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2vw 8vw 5.5vw 8vw;
+    background-color: $gray-color;
+    border-collapse:collapse;
+    table {
+      width: 100%;
+      border-collapse:collapse;
+    }
+    tr {
+      border-bottom: 1px solid #e3e3e3;
+    }
+    th, td {
+      @include fz_vw(18);
+      line-height: 1.8;
+      letter-spacing: 0.25em;
+    }
+    th {
+      text-align: left;
+      padding: 4vw 0 1vw 4vw;
+    }
+    td {
+      padding: 4vw 0vw 1vw 4vw;
+    }
+  }
+}
