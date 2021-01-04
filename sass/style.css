@@ -67,6 +67,7 @@ img {
   font-size: 14.02778vw;
   font-weight: bold;
   -webkit-text-stroke: 1px #aaa;
+  opacity: .7;
 }
 
 @media screen and (max-width: 768px) {
@@ -235,7 +236,6 @@ img {
   }
 }
 
-/*---------h4見出し------------*/
 .h4_index {
   color: #141f50;
   font-size: 23px;
@@ -270,6 +270,43 @@ img {
 @media screen and (max-width: 768px) {
   .h4_index:after {
     margin-top: 23px;
+  }
+}
+
+/*---------ボタン（黄）------------*/
+.btn {
+  font-size: 17px;
+  font-size: 1.18056vw;
+  letter-spacing: 0.15em;
+  background-color: #fff579;
+  border-radius: 15px;
+  padding: 1vw 6vw;
+  -webkit-box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
+          box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
+}
+
+@media screen and (max-width: 1366px) {
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .btn {
+    border-radius: 30px;
+    padding: 10px 60px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .btn {
+    width: 210px;
   }
 }
 
@@ -358,6 +395,293 @@ img {
   }
 }
 
+/*---------フッター----------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+
+.footer_logo {
+  width: 17%;
+  margin: 0 auto 3vw auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_logo {
+    width: 26%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer_logo {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer_logo {
+    width: 146px;
+  }
+}
+
+.footer_fb {
+  width: 3.3%;
+  margin: 0 auto 3vw auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_fb {
+    width: 6%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer_fb {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer_fb {
+    width: 42px;
+  }
+}
+
+.footer_copyright {
+  font-size: 18px;
+  font-size: 1.25vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer_copyright {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer_copyright {
+    font-size: 14px;
+  }
+}
+
+/*---------お問い合わせ----------*/
+.contact {
+  padding: 15vw 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-top: 150px;
+    padding: 15vw 0 140px 0;
+  }
+}
+
+.contact .dott:before {
+  top: -3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .dott:before {
+    background-size: 115%;
+    width: 36vw;
+    height: 26vw;
+    top: -7vw;
+  }
+}
+
+.contact .dott:after {
+  opacity: .1;
+  bottom: -3vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .dott:after {
+    bottom: -5vw;
+  }
+}
+
+.contact_contents {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5vw 7vw 5vw 8vw;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_contents {
+    padding: 5vw 4vw 5vw 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_contents {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_contents .h3_index {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_contents .h3_index {
+    width: 100%;
+  }
+}
+
+.contact_wrap {
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap {
+    margin-top: 38px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact_wrap_tel, .contact_wrap_fax {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel, .contact_wrap_fax {
+    width: 315px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.contact_wrap_tel img, .contact_wrap_fax img {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-right: 1.8vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel img, .contact_wrap_fax img {
+    margin-right: 3vw;
+  }
+}
+
+.contact_wrap_tel_index, .contact_wrap_fax_index {
+  font-size: 18px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  letter-spacing: .15em;
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_index, .contact_wrap_fax_index {
+    font-size: 14px;
+  }
+}
+
+.contact_wrap_tel_num, .contact_wrap_fax_num {
+  font-size: 34px;
+  font-size: 2.36111vw;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 42px;
+    font-size: 2.91667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .contact_wrap_tel_num, .contact_wrap_fax_num {
+    font-size: 28px;
+  }
+}
+
 /*----------ナビ------------*/
 .nav .menu {
   display: -webkit-box;
@@ -433,35 +757,6 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .mv_img .pc_MV {
-    display: none;
-  }
-}
-
-.mv_img .sp_MV {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .mv_img .sp_MV {
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: block;
-    height: 435px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .mv_img .sp_MV {
-    width: 100%;
-    -o-object-position: 75% 100%;
-       object-position: 75% 100%;
-    -webkit-transform: translateY(15px) scale(1.2);
-            transform: translateY(15px) scale(1.2);
-  }
-}
-
 .mv_back {
   width: 80vw;
   height: 33vw;
@@ -510,6 +805,67 @@ img {
     width: 180px;
     height: 180px;
     background-size: 120%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top .pc_MV {
+    display: none;
+  }
+}
+
+#top .sp_MV {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #top .sp_MV {
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    height: 435px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .sp_MV {
+    width: 100%;
+    -o-object-position: 75% 100%;
+       object-position: 75% 100%;
+    -webkit-transform: translateY(15px) scale(1.2);
+            transform: translateY(15px) scale(1.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .mv, #cases .mv {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .mv, #cases .mv {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .mv .pc_MV, #cases .mv .pc_MV {
+    height: 435px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+  }
+}
+
+#company .mv {
+  margin-bottom: 12vw;
+}
+
+@media screen and (max-width: 768px) {
+  #company .mv {
+    margin-bottom: 120px;
   }
 }
 
@@ -587,193 +943,26 @@ img {
   }
 }
 
-/*==========================================
-  トップページ
-==========================================*/
-#top {
-  /*---------BeTwinについて----------*/
-}
-
-#top .services {
-  position: relative;
-  width: 100%;
-  height: 62vw;
-  margin-bottom: 10vw;
+#services .mv_catchcopy, #cases .mv_catchcopy, #company .mv_catchcopy {
+  left: 13.5vw;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 1000px) {
-  #top .services {
-    height: 67vw;
+  #services .mv_catchcopy, #cases .mv_catchcopy, #company .mv_catchcopy {
+    left: 9vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #top .services {
-    height: 700px;
-    margin-bottom: 72px;
-  }
-}
-
-#top .services .dott:before {
-  opacity: .1;
-}
-
-#top .services_contents {
-  width: 75%;
-  margin: 18vw auto 0 auto;
-  padding: 8vw 0;
-  text-align: center;
-  background-image: url(../img/top_about_bgimage.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-}
-
-@media screen and (max-width: 1280px) {
-  #top .services_contents {
-    width: 768px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #top .services_contents {
-    width: 100%;
-    height: 660px;
-    padding: 100px 0;
-    background-size: cover;
+  #services .mv_catchcopy, #cases .mv_catchcopy, #company .mv_catchcopy {
+    top: 300px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #top .services_contents {
-    height: 640px;
-  }
-}
-
-#top .services_contents_text {
-  font-size: 17px;
-  font-size: 1.18056vw;
-  font-weight: bold;
-  letter-spacing: 0.25em;
-  line-height: 2.3;
-  margin: 3vw 0 6.4vw 0;
-}
-
-@media screen and (max-width: 1366px) {
-  #top .services_contents_text {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  #top .services_contents_text {
-    margin: 2vw 0 4.5vw 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #top .services_contents_text {
-    margin: 15px 0 60px 0;
-  }
-  #top .services_contents_text:nth-of-type(2) {
-    margin: 15px 0 40px 0;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #top .services_contents_text {
-    font-size: 14px;
-    letter-spacing: 0.2em;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  #top .services_contents_text {
-    letter-spacing: 0.1em;
-  }
-}
-
-#top .services_contents_text .sc_br {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  #top .services_contents_text .sc_br {
-    display: block;
-  }
-}
-
-#top .services_contents_btn {
-  font-size: 17px;
-  font-size: 1.18056vw;
-  letter-spacing: 0.15em;
-  background-color: #fff579;
-  border-radius: 15px;
-  padding: 1vw 6vw;
-  -webkit-box-shadow: 2px 5px 6px rgba(51, 51, 51, 0.4);
-          box-shadow: 2px 5px 6px rgba(51, 51, 51, 0.4);
-}
-
-@media screen and (max-width: 1366px) {
-  #top .services_contents_btn {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #top .services_contents_btn {
-    border-radius: 30px;
-    padding: 10px 60px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #top .services_contents_btn {
-    font-size: 14px;
-  }
-}
-
-#top .services .outline {
-  position: absolute;
-  top: -9.6vw;
-  right: -0.9vw;
-  z-index: 10;
-}
-
-@media screen and (max-width: 768px) {
-  #top .services .outline {
-    top: -75px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #top .services .outline {
-    top: -13vw;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  #top .services .outline {
-    top: -45px;
-  }
-}
-
-#top .services .circle:before {
-  top: 4.2vw;
-  right: 6.7vw;
-}
-
-@media screen and (max-width: 768px) {
-  #top .services .circle:before {
-    top: 30px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #top .services .circle:before {
-    top: 6vw;
-    right: 3vw;
+  #services .mv_catchcopy, #cases .mv_catchcopy, #company .mv_catchcopy {
+    top: 330px;
   }
 }
 
@@ -1091,290 +1280,833 @@ img {
   left: 0.05vw;
 }
 
-/*---------お問い合わせ----------*/
-.contact {
-  padding: 15vw 0;
+/*==========================================
+  トップページ
+==========================================*/
+#top {
+  /*---------BeTwinについて----------*/
 }
 
-@media screen and (max-width: 768px) {
-  .contact {
-    margin-top: 150px;
-    padding: 15vw 0 140px 0;
-  }
-}
-
-.contact .dott:before {
-  top: -3vw;
-}
-
-@media screen and (max-width: 768px) {
-  .contact .dott:before {
-    background-size: 115%;
-    width: 36vw;
-    height: 26vw;
-    top: -7vw;
-  }
-}
-
-.contact .dott:after {
-  opacity: .1;
-  bottom: -3vw;
-}
-
-@media screen and (max-width: 768px) {
-  .contact .dott:after {
-    bottom: -5vw;
-  }
-}
-
-.contact_contents {
-  width: 75%;
-  margin: 0 auto;
-  padding: 5vw 7vw 5vw 8vw;
-  background-color: #f5f5f5;
-  text-align: center;
+#top .services {
   position: relative;
+  width: 100%;
+  height: 62vw;
+  margin-bottom: 10vw;
 }
 
 @media screen and (max-width: 1000px) {
-  .contact_contents {
-    padding: 5vw 4vw 5vw 5vw;
+  #top .services {
+    height: 67vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .contact_contents {
-    width: 90%;
+  #top .services {
+    height: 700px;
+    margin-bottom: 72px;
   }
 }
 
-@media screen and (max-width: 413px) {
-  .contact_contents {
+#top .services .dott:before {
+  opacity: .1;
+}
+
+#top .services_contents {
+  width: 75%;
+  margin: 18vw auto 0 auto;
+  padding: 8vw 0;
+  text-align: center;
+  background-image: url(../img/top_about_bgimage.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+  #top .services_contents {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top .services_contents {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_contents .h3_index {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    height: 660px;
+    padding: 100px 0;
+    background-size: cover;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .contact_contents .h3_index {
-    width: 100%;
+  #top .services_contents {
+    height: 640px;
   }
 }
 
-.contact_wrap {
-  margin-top: 5vw;
+#top .services_contents_text {
+  font-size: 17px;
+  font-size: 1.18056vw;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  line-height: 2.3;
+  margin: 3vw 0 6.4vw 0;
+}
+
+@media screen and (max-width: 1366px) {
+  #top .services_contents_text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #top .services_contents_text {
+    margin: 2vw 0 4.5vw 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top .services_contents_text {
+    margin: 15px 0 60px 0;
+  }
+  #top .services_contents_text:nth-of-type(2) {
+    margin: 15px 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .services_contents_text {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #top .services_contents_text {
+    letter-spacing: 0.1em;
+  }
+}
+
+#top .services_contents_text .sc_br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #top .services_contents_text .sc_br {
+    display: block;
+  }
+}
+
+#top .services .outline {
+  position: absolute;
+  top: -9.6vw;
+  right: -0.9vw;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  #top .services .outline {
+    top: -75px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .services .outline {
+    top: -13vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #top .services .outline {
+    top: -45px;
+  }
+}
+
+#top .services .circle:before {
+  top: 4.2vw;
+  right: 6.7vw;
+}
+
+@media screen and (max-width: 768px) {
+  #top .services .circle:before {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #top .services .circle:before {
+    top: 6vw;
+    right: 3vw;
+  }
+}
+
+/*==========================================
+  事業内容ページ
+==========================================*/
+#services .h3_index:after {
+  width: 12vw;
+}
+
+@media screen and (max-width: 540px) {
+  #services .h3_index:after {
+    width: 100px;
+  }
+}
+
+#services .intro {
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .intro {
+    width: 90%;
+    margin: 0 auto 80px auto;
+  }
+}
+
+#services .intro p {
+  font-size: 18px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 2.4;
+}
+
+@media screen and (max-width: 1280px) {
+  #services .intro p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .intro p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+}
+
+#services .intro p .br2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #services .intro p .br2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .intro p .br2 {
+    display: none;
+  }
+}
+
+#services .design, #services .office {
+  position: relative;
+}
+
+#services .design:before, #services .office:before {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/bg_navydot.png);
+  background-size: 100%;
+  position: absolute;
+  width: 26vw;
+  height: 16vw;
+  top: 5vw;
+  z-index: -10;
+  opacity: .1;
+}
+
+@media screen and (max-width: 768px) {
+  #services .design:before, #services .office:before {
+    width: 180px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design:before, #services .office:before {
+    width: 160px;
+    height: 100px;
+  }
+}
+
+#services .design .outline, #services .office .outline {
+  position: absolute;
+  right: -.9vw;
+}
+
+#services .design .h3_index, #services .office .h3_index {
+  position: absolute;
+}
+
+#services .design p, #services .office p {
+  position: absolute;
+  top: 22.5vw;
+  left: 21.8vw;
+  padding-right: 50px;
+  line-height: 1.6;
+  font-size: 14px;
+  font-size: 0.97222vw;
+  letter-spacing: 0.22em;
+}
+
+@media screen and (max-width: 1440px) {
+  #services .design p, #services .office p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .design p, #services .office p {
+    top: 220px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design p, #services .office p {
+    top: 200px;
+    left: 135px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design p, #services .office p {
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .design p, #services .office p {
+    left: 100px;
+  }
+}
+
+#services .design p br, #services .office p br {
+  display: none;
+}
+
+#services .design .circle:before, #services .office .circle:before {
+  position: absolute;
+}
+
+#services .design .img_wrap, #services .office .img_wrap {
+  width: 100%;
+  position: absolute;
+  top: 15vw;
+  padding: 15vw 13vw 5vw 13vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-  .contact_wrap {
-    margin-top: 38px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (max-width: 1000px) {
+  #services .design .img_wrap, #services .office .img_wrap {
+    padding: 16vw 13vw 5vw 13vw;
   }
 }
 
-.contact_wrap_tel, .contact_wrap_fax {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (max-width: 768px) {
-  .contact_wrap_tel, .contact_wrap_fax {
-    width: 315px;
-    margin: 0 auto 40px auto;
-  }
-}
-
-.contact_wrap_tel img, .contact_wrap_fax img {
-  width: 4.5vw;
-  height: 4.5vw;
-  margin-right: 1.8vw;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel img, .contact_wrap_fax img {
-    width: 50px;
-    height: 50px;
+  #services .design .img_wrap, #services .office .img_wrap {
+    width: 500px;
+    margin: 0 auto;
+    padding: 300px 0 50px 0;
+    position: static;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .contact_wrap_tel img, .contact_wrap_fax img {
-    margin-right: 5vw;
+  #services .design .img_wrap, #services .office .img_wrap {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .design .img_wrap, #services .office .img_wrap {
+    width: 320px;
   }
 }
 
 @media screen and (max-width: 413px) {
-  .contact_wrap_tel img, .contact_wrap_fax img {
-    margin-right: 3vw;
+  #services .design .img_wrap, #services .office .img_wrap {
+    width: 300px;
+    padding: 310px 0 50px 0;
   }
 }
 
-.contact_wrap_tel_index, .contact_wrap_fax_index {
-  font-size: 18px;
-  font-size: 1.25vw;
-  font-weight: bold;
-  letter-spacing: .15em;
-  margin-bottom: 1vw;
-}
-
-@media screen and (max-width: 1440px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 18px;
+@media screen and (max-width: 340px) {
+  #services .design .img_wrap, #services .office .img_wrap {
+    width: 280px;
+    padding: 325px 0 50px 0;
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 14px;
-  }
+#services .design .img_wrap img, #services .office .img_wrap img {
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 16px;
+  #services .design .img_wrap img, #services .office .img_wrap img {
+    width: 230px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .contact_wrap_tel_index, .contact_wrap_fax_index {
-    font-size: 14px;
+  #services .design .img_wrap img, #services .office .img_wrap img {
+    width: 380px;
   }
 }
 
-.contact_wrap_tel_num, .contact_wrap_fax_num {
+@media screen and (max-width: 480px) {
+  #services .design .img_wrap img, #services .office .img_wrap img {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design .img_wrap img, #services .office .img_wrap img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .design .img_wrap img, #services .office .img_wrap img {
+    width: 280px;
+  }
+}
+
+#services .design .gray-bg, #services .office .gray-bg {
+  background-color: #f5f5f5;
+  position: absolute;
+  right: 0;
+  top: 9.8vw;
+  width: 79%;
+  z-index: -5;
+}
+
+@media screen and (max-width: 768px) {
+  #services .design .gray-bg, #services .office .gray-bg {
+    top: 77px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design .gray-bg, #services .office .gray-bg {
+    top: 54px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design .gray-bg, #services .office .gray-bg {
+    top: 48px;
+  }
+}
+
+#services .design {
+  height: 60vw;
+  margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .design {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design {
+    height: 1400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .design {
+    height: 1260px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design {
+    height: 1220px;
+  }
+}
+
+#services .design:before {
+  left: 5vw;
+}
+
+#services .design .h3_index {
+  top: 15vw;
+  left: 13vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .design .h3_index {
+    top: 140px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design .h3_index {
+    top: 120px;
+  }
+}
+
+#services .design .circle:before {
+  top: -3vw;
+  left: -6vw;
+}
+
+#services .design .gray-bg {
+  height: 45vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .design .gray-bg {
+    height: 680px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design .gray-bg {
+    height: 1280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .design .gray-bg {
+    height: 1150px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design .gray-bg {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .design .gray-bg {
+    height: 1080px;
+  }
+}
+
+#services .office {
+  height: 71vw;
+  margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .office {
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .office {
+    height: 1360px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .office {
+    height: 1280px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .office {
+    height: 1240px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .office {
+    height: 1190px;
+  }
+}
+
+#services .office:before {
+  right: 5vw;
+}
+
+#services .office .h3_index {
+  top: 17vw;
+  right: 13vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .office .h3_index {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .office .h3_index {
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .office .h3_index {
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+#services .office .h3_index br {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  #services .office .h3_index br {
+    display: block;
+  }
+}
+
+#services .office .outline {
+  left: -.8vw;
+}
+
+#services .office .circle:before {
+  top: -4vw;
+  right: -4vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .office .img_wrap {
+    padding: 260px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .office .img_wrap {
+    padding: 220px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .office .img_wrap {
+    padding: 265px 0 50px 0;
+  }
+}
+
+#services .office .gray-bg {
+  left: 0;
+  height: 54vw;
+}
+
+@media screen and (max-width: 768px) {
+  #services .office .gray-bg {
+    height: 770px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .office .gray-bg {
+    height: 1260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .office .gray-bg {
+    height: 1170px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .office .gray-bg {
+    height: 1130px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .office .gray-bg {
+    height: 1090px;
+  }
+}
+
+#services .office .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 14vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  #services .office .btn {
+    bottom: 110px;
+  }
+}
+
+.overview {
+  position: relative;
+}
+
+.overview .outline {
+  position: absolute;
+  top: -2.5vw;
+  right: -0.2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .overview .outline {
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .overview .outline {
+    top: -4px;
+  }
+}
+
+.overview h3 {
   font-size: 34px;
   font-size: 2.36111vw;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 5.5vw;
 }
 
-@media screen and (max-width: 1000px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 42px;
-    font-size: 2.91667vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
+@media screen and (max-width: 1280px) {
+  .overview h3 {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 413px) {
-  .contact_wrap_tel_num, .contact_wrap_fax_num {
-    font-size: 28px;
+@media screen and (max-width: 1000px) {
+  .overview h3 {
+    font-size: 24px;
   }
 }
 
-/*---------フッター----------*/
-.footer {
+@media screen and (max-width: 768px) {
+  .overview h3 {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .overview h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .overview h3 {
+    margin-bottom: 25px;
+  }
+}
+
+.overview_contents {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2vw 8vw 5.5vw 8vw;
+  background-color: #f5f5f5;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 1000px) {
+  .overview_contents {
+    padding: 2vw 4vw 5.5vw 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview_contents {
+    width: 90%;
+    padding: 30px 4vw 30px 4vw;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .overview_contents {
+    width: 95%;
+  }
+}
+
+.overview_contents table {
   width: 100%;
-  text-align: center;
-  padding-bottom: 2vw;
+  border-collapse: collapse;
 }
 
-@media screen and (max-width: 768px) {
-  .footer {
-    padding-bottom: 30px;
-  }
+.overview_contents tr {
+  border-bottom: 1px solid #e3e3e3;
 }
 
-.footer_logo {
-  width: 17%;
-  margin: 0 auto 3vw auto;
-}
-
-@media screen and (max-width: 768px) {
-  .footer_logo {
-    width: 26%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .footer_logo {
-    width: 35%;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  .footer_logo {
-    width: 146px;
-  }
-}
-
-.footer_fb {
-  width: 3.3%;
-  margin: 0 auto 3vw auto;
-}
-
-@media screen and (max-width: 768px) {
-  .footer_fb {
-    width: 6%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .footer_fb {
-    width: 10%;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  .footer_fb {
-    width: 42px;
-  }
-}
-
-.footer_copyright {
+.overview_contents th, .overview_contents td {
   font-size: 18px;
   font-size: 1.25vw;
+  line-height: 1.8;
+  letter-spacing: 0.25em;
 }
 
-@media screen and (max-width: 1440px) {
-  .footer_copyright {
-    font-size: 18px;
+@media screen and (max-width: 1280px) {
+  .overview_contents th, .overview_contents td {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .footer_copyright {
+  .overview_contents th, .overview_contents td {
     font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.overview_contents th {
+  text-align: left;
+  padding: 4vw 0 1vw 4vw;
+}
+
+@media screen and (max-width: 1280px) {
+  .overview_contents th {
+    width: 189px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .overview_contents th {
+    width: 135px;
+    padding: 4vw 0 1vw 2vw;
+  }
+}
+
+.overview_contents td {
+  padding: 4vw 0vw 1vw 4vw;
+}
+
+.overview_contents td .br1 {
+  display: none;
+}
+
+@media screen and (max-width: 413px) {
+  .overview_contents td .br1 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview_contents td {
+    padding: 4vw 0vw 1vw 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

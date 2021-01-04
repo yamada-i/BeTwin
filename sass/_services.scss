@@ -74,24 +74,6 @@
           }
         }
       }
-      &_btn {
-        @include fz_vw(17);
-        letter-spacing: 0.15em;
-        background-color: $yellow-color;
-        border-radius: 15px;
-        padding: 1vw 6vw;
-        box-shadow: 2px 5px 6px rgba(51,51,51,0.4);
-        @include px1366() {
-          font-size: 16px;
-        }
-        @include px1000() {
-          border-radius: 30px;
-          padding: 10px 60px;
-        }
-        @include px540() {
-          font-size: 14px;
-        }
-      }
     }
     .outline {
       position: absolute;
@@ -117,6 +99,318 @@
       @include px540() {
         top: 6vw;
         right: 3vw;
+      }
+    }
+  }
+}
+/*==========================================
+  事業内容ページ
+==========================================*/
+#services {
+  .h3_index:after {
+    width: 12vw;
+    @include px540() {
+      width: 100px;
+    }
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 10vw;
+    @include px768() {
+      width: 90%;
+      margin: 0 auto 80px auto;
+    }
+    p {
+      @include fz_vw(18);
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      line-height: 2.4;  
+      @include px1280() {
+        font-size: 16px;
+      }
+      @include px413() {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+      }
+      .br2 {
+        display: none;
+        @include px768() {
+          display: block;
+        }
+        @include px413() {
+          display: none;
+        }
+      }
+    }
+  }
+  .design, .office {
+    position: relative;
+    &:before {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/bg_navydot.png);
+      background-size: 100%;
+      position: absolute;
+      width: 26vw;
+      height: 16vw;
+      top: 5vw;
+      z-index: -10;
+      opacity: .1;
+      @include px768() {
+        width: 180px;
+        height: 120px;
+      }
+      @include px540() {
+        width: 160px;
+        height: 100px;
+      }
+    }
+    .outline {
+      position: absolute;
+      right: -.9vw;
+    }
+    .h3_index {
+      position: absolute;
+    }
+    p {
+      position: absolute;
+      top: 22.5vw;
+      left: 21.8vw;
+      padding-right: 50px;
+      line-height: 1.6;
+      @include fz_vw(14);
+      letter-spacing: 0.22em;
+      @include px1440() {
+        font-size: 14px;
+      }
+      @include px768() {
+        top: 220px;
+      }
+      @include px540() {
+        top: 200px;
+        left: 135px;
+        padding-right: 30px;
+      }
+      @include px413() {
+        left: 120px;
+      }
+      @include px340() {
+        left: 100px;
+      }
+      br {
+        display: none;
+      }
+    }
+    .circle:before {
+      position: absolute;
+    }
+    .img_wrap {
+      width: 100%;
+      position: absolute;
+      top: 15vw;
+      padding: 15vw 13vw 5vw 13vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include px1000() {
+        padding: 16vw 13vw 5vw 13vw;
+      }
+      @include px768() {
+        width: 500px;
+        margin: 0 auto;
+        padding: 300px 0 50px 0;
+        position: static;
+      }
+      @include px540() {
+        width: 380px;
+      }
+      @include px480() {
+        width: 320px;
+      }
+      @include px413() {
+        width: 300px;
+        padding: 310px 0 50px 0;
+      }
+      @include px340() {
+        width: 280px;
+        padding: 325px 0 50px 0;
+      }
+      img {
+        width: 30%;
+        @include px768() {
+          width: 230px;
+          margin-bottom: 20px;
+        }
+        @include px540() {
+          width: 380px;
+        }
+        @include px480() {
+          width: 320px;
+          margin-bottom: 30px;
+        }
+        @include px413() {
+          width: 300px;
+        }
+        @include px340() {
+          width: 280px;
+        }  
+      }
+    }
+    .gray-bg {
+      background-color: $gray-color;
+      position: absolute;
+      right: 0;
+      top: 9.8vw;
+      width: 79%;
+      z-index: -5;
+      @include px768() {
+        top: 77px;
+      }
+      @include px540() {
+        top: 54px;
+      }
+      @include px413() {
+        top: 48px;
+      }
+    }
+  }
+  .design {
+    height: 60vw;
+    margin-bottom: 5vw;
+    @include px768() {
+      height: 850px;
+    }
+    @include px540() {
+      height: 1400px;
+    }
+    @include px480() {
+      height: 1260px;
+    }
+    @include px413() {
+      height: 1220px;
+    }
+    &:before {
+      left: 5vw;
+    }
+    .h3_index {
+      top: 15vw;
+      left: 13vw;
+      @include px768() {
+        top: 140px;
+      }
+      @include px540() {
+        top: 120px;
+      }
+    }
+    .circle:before {
+      top: -3vw;
+      left: -6vw;
+    }
+    .gray-bg {
+      height: 45vw;
+      @include px768() {
+        height: 680px;
+      }
+      @include px540() {
+        height: 1280px;
+      }
+      @include px480() {
+        height: 1150px;
+      }
+      @include px413() {
+        height: 1100px;
+      }
+      @include px340() {
+        height: 1080px;
+      }
+    }
+  }
+  .office {
+    height: 71vw;
+    margin-bottom: 5vw;
+    @include px768() {
+      height: 900px;
+    }
+    @include px540() {
+      height: 1360px;
+      margin-bottom: 100px;
+    }
+    @include px480() {
+      height: 1280px;
+    }
+    @include px413() {
+      height: 1240px;
+    }
+    @include px340() {
+      height: 1190px;
+    }
+    &:before {
+      right: 5vw;
+    }
+    .h3_index {
+      top: 17vw;
+      right: 13vw;
+      @include px768() {
+        top: 150px;
+      }
+      @include px540() {
+        top: 120px;
+      }
+      @include px480() {
+        line-height: 1.2;
+        text-align: right;
+      }
+      br {
+        display: none;
+        @include px480() {
+          display: block;
+        }
+      }
+    }
+    .outline {
+      left: -.8vw;
+    }
+    .circle:before {
+      top: -4vw;
+      right: -4vw;
+    }
+    .img_wrap {
+      @include px768() {
+        padding: 260px 0 50px 0;
+      }
+      @include px540() {
+        padding: 220px 0 50px 0;
+      }
+      @include px480() {
+        padding: 265px 0 50px 0;
+      }
+    }
+    .gray-bg {
+      left: 0;
+      height: 54vw;
+      @include px768() {
+        height: 770px;
+      }
+      @include px540() {
+        height: 1260px;
+      }
+      @include px480() {
+        height: 1170px;
+      }
+      @include px413() {
+        height: 1130px;
+      }
+      @include px340() {
+        height: 1090px;
+      }
+    }
+    .btn {
+      position: absolute;
+      left: 50%;
+      bottom: 14vw;
+      transform: translateX(-50%);
+      @include px768() {
+        bottom: 110px;
       }
     }
   }

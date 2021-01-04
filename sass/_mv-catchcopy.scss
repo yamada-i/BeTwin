@@ -49,4 +49,19 @@
     }
   }
 }
+#services, #cases, #company {
+  .mv_catchcopy {
+    left: 13.5vw;
+    letter-spacing: 0.1em;
+    @include px1000() {
+      left: 9vw;
+    }
+    @include px768() {
+      top: 300px;
+    }
+    @include px540() {
+      top: 330px;
+    }
+  }
+}
   

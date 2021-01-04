@@ -30,6 +30,7 @@ img {
   @include fz_vw(202);
   font-weight: bold;
   -webkit-text-stroke: 1px #aaa;
+  opacity: .7;
   @include px768() {
     font-size: 110px; 
   }
@@ -142,7 +143,6 @@ img {
     }
   }
 }
-/*---------h4見出し------------*/
 .h4_index {
   color: $naivy-color;
   @include fz_vw(23);
@@ -166,4 +166,27 @@ img {
       margin-top: 23px;
     }
   }
-} 
+}
+/*---------ボタン（黄）------------*/
+.btn {
+  @include fz_vw(17);
+  letter-spacing: 0.15em;
+  background-color: $yellow-color;
+  border-radius: 15px;
+  padding: 1vw 6vw;
+  box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
+  @include px1366() {
+    font-size: 16px;
+  }
+  @include px1000() {
+    border-radius: 30px;
+    padding: 10px 60px;
+  }
+  @include px540() {
+    font-size: 14px;
+  }
+  @include px413() {
+    width: 210px;
+  }
+}
+

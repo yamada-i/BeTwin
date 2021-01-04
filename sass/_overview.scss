@@ -1,0 +1,96 @@
+.overview {
+  position: relative;
+  .outline {
+    position: absolute;
+    top: -2.5vw;
+    right: -0.2vw;
+    @include px768() {
+      top: -12px;
+    }
+    @include px540() {
+      top: -4px;
+    }
+  }
+  h3 {
+    @include fz_vw(34);
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 5.5vw;
+    @include px1280() {
+      font-size: 30px;
+    }
+    @include px1000() {
+      font-size: 24px;
+    }
+    @include px768() {
+      margin-bottom: 45px;
+    }
+    @include px540() {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+    @include px413() {
+      margin-bottom: 25px;
+    }
+  }
+  &_contents {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2vw 8vw 5.5vw 8vw;
+    background-color: $gray-color;
+    border-collapse:collapse;
+    @include px1000() {
+      padding: 2vw 4vw 5.5vw 4vw;
+    }
+    @include px768() {
+      width: 90%;
+      padding: 30px 4vw 30px 4vw;
+    }
+    @include px413() {
+      width: 95%;
+    }
+    table {
+      width: 100%;
+      border-collapse:collapse;
+    }
+    tr {
+      border-bottom: 1px solid #e3e3e3;
+    }
+    th, td {
+      @include fz_vw(18);
+      line-height: 1.8;
+      letter-spacing: 0.25em;
+      @include px1280() {
+        font-size: 16px;
+      }
+      @include px768() {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+      }
+    }
+    th {
+      text-align: left;
+      padding: 4vw 0 1vw 4vw;
+      @include px1280() {
+        width: 189px;
+      }
+      @include px540() {
+        width: 135px;
+        padding: 4vw 0 1vw 2vw;
+      }
+    }
+    td {
+      padding: 4vw 0vw 1vw 4vw;
+      .br1 {
+        display: none;
+        @include px413() {
+          display: block;
+        }
+      }
+      @include px768() {
+        padding: 4vw 0vw 1vw 0;
+      }
+    }
+  }
+}
