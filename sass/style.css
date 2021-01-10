@@ -838,19 +838,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  #services .mv, #cases .mv {
+  #services .mv, #cases .mv, #company .mv {
     margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 413px) {
-  #services .mv, #cases .mv {
+  #services .mv, #cases .mv, #company .mv {
     margin-bottom: 70px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #services .mv .pc_MV, #cases .mv .pc_MV {
+  #services .mv .pc_MV, #cases .mv .pc_MV, #company .mv .pc_MV {
     height: 435px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -866,6 +866,13 @@ img {
 @media screen and (max-width: 768px) {
   #company .mv {
     margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  #company .mv .pc_MV {
+    -o-object-position: 90% 100%;
+       object-position: 90% 100%;
   }
 }
 
