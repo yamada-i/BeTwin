@@ -64,4 +64,38 @@
     }
   }
 }
+#cases {
+  .mv_catchcopy {
+    top: 18vw;
+    @include px768() {
+      top: 260px;
+    }
+    @include px540() {
+      top: 290px;
+    }
+    &_sub {
+      @include fz_vw(23);
+      color: $white-color;
+      font-weight: bold;
+      position: absolute;
+      letter-spacing: .15em;
+      line-height: 1.8;
+      top: 24.5vw;
+      left: 13.5vw;
+      z-index: 2;
+      @include px1000() {
+        @include fz_vw(33);
+        left: 9vw;
+        top: 25.5vw;
+      }  
+      @include px768() {
+        font-size: 18px;
+        top: 330px;
+      }
+      @include px540() {
+        top: 350px;
+      }  
+    }
+  }
+}
   
