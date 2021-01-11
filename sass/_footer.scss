@@ -7,6 +7,7 @@
     padding-bottom: 30px;
   }
   &_logo {
+    display: block;
     width: 17%;
     margin: 0 auto 3vw auto;
     @include px768() {
@@ -21,6 +22,7 @@
     }
   }
   &_fb {
+    display: block;
     width: 3.3%;
     margin: 0 auto 3vw auto;
     @include px768() {

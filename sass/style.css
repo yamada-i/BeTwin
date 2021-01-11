@@ -409,6 +409,7 @@ img {
 }
 
 .footer_logo {
+  display: block;
   width: 17%;
   margin: 0 auto 3vw auto;
 }
@@ -433,6 +434,7 @@ img {
 }
 
 .footer_fb {
+  display: block;
   width: 3.3%;
   margin: 0 auto 3vw auto;
 }
@@ -973,6 +975,57 @@ img {
   }
 }
 
+#cases .mv_catchcopy {
+  top: 18vw;
+}
+
+@media screen and (max-width: 768px) {
+  #cases .mv_catchcopy {
+    top: 260px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #cases .mv_catchcopy {
+    top: 290px;
+  }
+}
+
+#cases .mv_catchcopy_sub {
+  font-size: 23px;
+  font-size: 1.59722vw;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: .15em;
+  line-height: 1.8;
+  top: 24.5vw;
+  left: 13.5vw;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  #cases .mv_catchcopy_sub {
+    font-size: 33px;
+    font-size: 2.29167vw;
+    left: 9vw;
+    top: 25.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cases .mv_catchcopy_sub {
+    font-size: 18px;
+    top: 330px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #cases .mv_catchcopy_sub {
+    top: 350px;
+  }
+}
+
 /*---------施工事例----------*/
 #top .cases {
   width: 100%;
@@ -1410,13 +1463,13 @@ img {
 
 #top .services_contents {
   width: 75%;
-  margin: 18vw auto 0 auto;
-  padding: 8vw 0;
+  margin: 20vw auto 0 auto;
+  padding: 8.5vw 0;
   text-align: center;
-  background-image: url(../img/top_about_bgimage.png);
+  background-image: url(../img/about_bgimage.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
   position: relative;
 }
 
@@ -1429,7 +1482,6 @@ img {
 @media screen and (max-width: 768px) {
   #top .services_contents {
     width: 100%;
-    height: 660px;
     padding: 100px 0;
     background-size: cover;
   }
@@ -1447,7 +1499,7 @@ img {
   font-weight: bold;
   letter-spacing: 0.25em;
   line-height: 2.3;
-  margin: 3vw 0 6.4vw 0;
+  margin: 1.5vw 0 7.7vw 0;
 }
 
 @media screen and (max-width: 1366px) {
@@ -1458,7 +1510,13 @@ img {
 
 @media screen and (max-width: 1280px) {
   #top .services_contents_text {
-    margin: 2vw 0 4.5vw 0;
+    margin: 2vw 0 6vw 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #top .services_contents_text {
+    margin: 2vw 0 5.5vw 0;
   }
 }
 
@@ -1467,7 +1525,7 @@ img {
     margin: 15px 0 60px 0;
   }
   #top .services_contents_text:nth-of-type(2) {
-    margin: 15px 0 40px 0;
+    margin: 15px 0 70px 0;
   }
 }
 
@@ -1475,6 +1533,9 @@ img {
   #top .services_contents_text {
     font-size: 14px;
     letter-spacing: 0.2em;
+  }
+  #top .services_contents_text:nth-of-type(2) {
+    margin: 15px 0 45px 0;
   }
 }
 
@@ -1520,19 +1581,20 @@ img {
 }
 
 #top .services .circle:before {
-  top: 4.2vw;
-  right: 6.7vw;
+  top: -5.5vw;
+  right: 6.5vw;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
   #top .services .circle:before {
-    top: 30px;
+    top: -60px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #top .services .circle:before {
-    top: 6vw;
+    top: -10vw;
     right: 3vw;
   }
 }
@@ -1864,7 +1926,7 @@ img {
 
 #services .design .circle:before {
   top: -3vw;
-  left: -6vw;
+  left: -8vw;
 }
 
 #services .design .gray_bg {
@@ -1981,7 +2043,7 @@ img {
 
 #services .office .circle:before {
   top: -4vw;
-  right: -4vw;
+  right: -8vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -2208,7 +2270,7 @@ img {
 }
 
 #cases .case {
-  height: 90vw;
+  height: 93vw;
 }
 
 #cases .case_top {
@@ -2232,7 +2294,7 @@ img {
   width: 41%;
   position: absolute;
   right: 0;
-  padding-right: 14.5vw;
+  padding-right: 10vw;
 }
 
 #cases .case_top_right .h3_index {
@@ -2252,16 +2314,18 @@ img {
   font-size: 18px;
   font-size: 1.25vw;
   font-weight: 500;
-  padding-bottom: 1vw;
-  letter-spacing: .25em;
+  padding-bottom: 1.2vw;
+  margin: 2.5vw 0 2vw 0;
+  letter-spacing: .24em;
 }
 
 #cases .case_top_right p {
   font-size: 14px;
   font-size: 0.97222vw;
   font-weight: 500;
-  letter-spacing: .27em;
+  letter-spacing: .25em;
   line-height: 2.4;
+  padding-right: 5vw;
 }
 
 #cases .case_top_left {
@@ -2320,10 +2384,10 @@ img {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 20vw;
+  height: 22vw;
   background-color: #141f50;
   position: absolute;
-  bottom: -14vw;
+  bottom: -17.2vw;
   right: 0;
   z-index: -5;
 }
@@ -2338,6 +2402,10 @@ img {
   #cases .case_bottom:after {
     display: none;
   }
+}
+
+#cases .case03 h5 {
+  letter-spacing: .12em;
 }
 
 #cases .contact {
