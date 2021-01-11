@@ -1,6 +1,6 @@
 #cases {
   .case {
-    height: 90vw;
+    height: 93vw;
     &_top {
       display: flex;
       flex-direction: row-reverse;
@@ -11,7 +11,7 @@
         width: 41%;
         position: absolute;
         right: 0;
-        padding-right: 14.5vw;
+        padding-right: 10vw;
         .h3_index {
           padding: 2.5vw 0 0 0;
           &:after {
@@ -25,14 +25,16 @@
         h5 {
           @include fz_vw(18);
           font-weight: 500;
-          padding-bottom: 1vw;
-          letter-spacing: .25em;
+          padding-bottom: 1.2vw;
+          margin: 2.5vw 0 2vw 0;
+          letter-spacing: .24em;
         }
         p {
           @include fz_vw(14);
           font-weight: 500;
-          letter-spacing: .27em;
+          letter-spacing: .25em;
           line-height: 2.4;
+          padding-right: 5vw;
         }
       }
       &_left {
@@ -78,10 +80,10 @@
         content: '';
         display: inline-block;
         width: 100%;
-        height: 20vw;
+        height: 22vw;
         background-color: $naivy-color;
         position: absolute;
-        bottom: -14vw;
+        bottom: -17.2vw;
         right: 0;
         z-index: -5;
         @include px1000() {
@@ -91,6 +93,11 @@
           display: none;
         }
       }  
+    }
+  }
+  .case03 {
+    h5 {
+      letter-spacing: .12em;
     }
   }
   .contact {
