@@ -408,6 +408,12 @@ img {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .footer {
+    padding-bottom: 70px;
+  }
+}
+
 .footer_logo {
   display: block;
   width: 17%;
@@ -713,6 +719,36 @@ img {
 @media screen and (max-width: 1000px) {
   .nav .menu_list a {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .nav {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background-color: #141f50;
+  }
+  .nav .menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav .menu_list {
+    text-align: center;
+    padding-left: 0;
+    width: 25%;
+    border: 1px solid #fff;
+  }
+  .nav .menu_list a {
+    display: block;
+    color: #fff;
+    padding: 20px 0;
   }
 }
 

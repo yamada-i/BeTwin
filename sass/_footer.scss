@@ -6,6 +6,9 @@
   @include px768() {
     padding-bottom: 30px;
   }
+  @include px540() {
+    padding-bottom: 70px;
+  }
   &_logo {
     display: block;
     width: 17%;
