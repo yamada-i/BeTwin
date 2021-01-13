@@ -98,7 +98,7 @@
       left: 0.05vw;
     }
   }
-  &_panel_2 {
+  &_panel_2, &_panel_5 {
     position: relative;
     top: 3.4vw;
     @include px768() {
@@ -115,7 +115,7 @@
       }
     }
   }
-  &_panel_3 {
+  &_panel_3, &_panel_6 {
     position: relative;
     top: 6.4vw;
     @include px768() {
@@ -125,4 +125,77 @@
       left: 0.05vw;
     }
   } 
+}
+#cases {
+  .cases {
+    &_list {
+      position: relative;
+      margin-bottom: 20vw;
+      .outline {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 78%;
+        height: 95vw;
+        background-color: $gray-color;
+        position: absolute;
+        top: 10vw;
+        right: 0;
+        z-index: -5;
+      }
+      .h3_index {
+        position: absolute;
+        top: 16vw;
+        left: 14vw;
+        @include fz_vw(34);
+        @include px1000() {
+          @include fz_vw(46);
+        }
+        @include px768() {
+          font-size: 28px;
+        }
+      }
+      .circle:before {
+        position: absolute;
+        top: -4vw;
+        left: -7vw;
+      }
+    }
+    &_contents {
+      &_wrap {
+        padding: 28vw 9.2vw 0 9.2vw;
+        flex-wrap: wrap;
+      }
+      &_panel {
+        width: 33.333%;
+        margin: 0 auto 6vw auto;
+        padding: 0 3vw;  
+        @include px768() {
+          width: 307px;
+          margin: 0 auto 30px auto;
+          padding: 0;
+        }
+        @include px413() {
+          width: 260px;
+        }    
+        &_client {
+          box-shadow: 0 2px 4px #999;
+        }
+      }
+      &_panel_3, &_panel_4, &_panel_6 {
+        .cases_contents_panel_client {
+          left: 0vw;
+        }
+      }
+      &_panel_5 {
+        .cases_contents_panel_client {
+          left: -0.02vw;
+        }
+      }
+    }
+  }
 }
