@@ -1,96 +1,285 @@
-.overview {
-  position: relative;
-  .outline {
-    position: absolute;
-    top: -2.5vw;
-    right: -0.2vw;
-    @include px768() {
-      top: -12px;
-    }
-    @include px540() {
-      top: -4px;
-    }
-  }
-  h3 {
-    @include fz_vw(34);
-    font-weight: bold;
-    letter-spacing: 0.15em;
-    text-align: center;
-    margin-bottom: 5.5vw;
+#company {
+  .message {
+    margin: 17vw 0 25vw 0;
+    position: relative;
     @include px1280() {
-      font-size: 30px;
+      margin: 250px 0 350px 0;
     }
     @include px1000() {
-      font-size: 24px;
+      margin: 200px 0 350px 0;
     }
     @include px768() {
-      margin-bottom: 45px;
+      margin: 150px 0 250px 0;
     }
-    @include px540() {
-      font-size: 20px;
-      margin-bottom: 35px;
+    @include px480() {
+      margin: 100px 0 200px 0;
     }
-    @include px413() {
-      margin-bottom: 25px;
-    }
-  }
-  &_contents {
-    width: 75%;
-    margin: 0 auto;
-    padding: 2vw 8vw 5.5vw 8vw;
-    background-color: $gray-color;
-    border-collapse:collapse;
-    @include px1000() {
-      padding: 2vw 4vw 5.5vw 4vw;
-    }
-    @include px768() {
-      width: 90%;
-      padding: 30px 4vw 30px 4vw;
-    }
-    @include px413() {
-      width: 95%;
-    }
-    table {
-      width: 100%;
-      border-collapse:collapse;
-    }
-    tr {
-      border-bottom: 1px solid #e3e3e3;
-    }
-    th, td {
-      @include fz_vw(18);
-      line-height: 1.8;
-      letter-spacing: 0.25em;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 78%;
+      height: 105vw;
+      background-color: $gray-color;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
       @include px1280() {
-        font-size: 16px;
+        height: 1350px;
       }
       @include px768() {
-        font-size: 14px;
-        letter-spacing: 0.1em;
+        height: 1050px;
       }
-    }
-    th {
-      text-align: left;
-      padding: 4vw 0 1vw 4vw;
-      @include px1280() {
-        width: 189px;
+      @media screen and (max-width: 655px) {
+        height: 1100px;
       }
       @include px540() {
-        width: 135px;
-        padding: 4vw 0 1vw 2vw;
+        height: 1230px;
+      }
+      @media screen and (max-width: 450px) {
+        height: 1340px;
+      }
+      @media screen and (max-width: 434px) {
+        height: 1360px;
+      }
+      @media screen and (max-width: 370px) {
+        height: 1420px;
+      }
+      @media screen and (max-width: 343px) {
+        height: 1470px;
+      }
+      @media screen and (max-width: 342px) {
+        height: 1550px;
       }
     }
-    td {
-      padding: 4vw 0vw 1vw 4vw;
-      .br1 {
-        display: none;
+    .circle:before {
+      top: 3vw;
+      left: 6vw;
+      @include px480() {
+        top: 6vw;
+      }
+      @include px413 {
+        top: 40px;
+        left: 20px;
+      }
+      @include px340() {
+        top: 56px;
+      }
+    }
+    .outline {
+      position: absolute;
+      top: -9.6vw;
+      right: -0.2vw;
+      @include px768() {
+        top: -75px;
+      }
+      @include px540() {
+        top: -55px;
+      }
+      @include px480() {
+        top: -50px;
+      }
+      @include px413() {
+        top: -45px;
+      }
+    }
+    &_contents {
+      width: 100%;
+      position: relative;
+      .h3_index {
+        margin: 8vw 0 6vw 14vw;
+        @include px1280() {
+          font-size: 30px;
+        }
+        @include px1000() {
+          font-size: 24px;
+        }
+        @include px768() {
+          margin-bottom: 45px;
+          margin-left: 100px;
+        }
+        @include px540() {
+          font-size: 24px;
+          margin-top: 80px;
+          margin-bottom: 35px;
+          margin-left: 70px;
+        }
         @include px413() {
-          display: block;
+          margin-left: 40px;
         }
       }
+      &_text {
+        width: 68%;
+        margin: 0 auto;
+        @include px768() {
+          width: 80%;
+        }
+        @include px480() {
+          width: 85%;
+        }
+        p {
+          @include fz_vw(18);
+          font-weight: bold;
+          line-height: 2.4;
+          letter-spacing: .2em;
+          margin-bottom: 3vw;
+          @include px1280() {
+            font-size: 16px;
+          }
+          @include px768() {
+            font-size: 14px;
+            letter-spacing: 0.1em;
+          }  
+          .br1 {
+            display: block;
+            @media screen and (max-width: 1042px) {
+              display: none;
+            }
+          }
+          .br2 {
+            display: block;
+            @media screen and (max-width: 875px) {
+              display: none;
+            }
+          }
+          .br3 {
+            display: block;
+            @media screen and (max-width: 842px) {
+              display: none;
+            }
+          }
+          .br4 {
+            display: block;
+            @media screen and (max-width: 531px) {
+              display: none;
+            }
+          }
+        }
+      }
+      &_sign {
+        width: 68%;
+        margin: 0 auto;
+        padding-right: 40px;
+        text-align: right;
+        @include px1000() {
+          padding-right: 0;
+          margin: 50px auto 0 auto;
+        }
+        img {
+          width: 18vw;
+          @include px1000() {
+            width: 180px;
+          }  
+        }
+      }
+    }
+  }
+  
+  .overview {
+    position: relative;
+    .outline {
+      position: absolute;
+      top: -10vw;
+      right: -0.2vw;
       @include px768() {
-        padding: 4vw 0vw 1vw 0;
+        top: -80px;
+      }
+      @include px540() {
+        top: -50px;
+      }
+    }
+    .circle:before {
+      top: 1vw;
+      right: 6vw;
+    }
+    .h3_index {
+      @include fz_vw(34);
+      width: 100%;
+      color: $black-color;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      text-align: center;
+      margin: 5.5vw 0 2vw 0;
+      &:after {
+        background-color: $black-color;
+      }
+      @include px1280() {
+        font-size: 30px;
+      }
+      @include px1000() {
+        font-size: 24px;
+      }
+      @include px768() {
+        margin-bottom: 45px;
+      }
+      @include px540() {
+        font-size: 20px;
+        margin-bottom: 35px;
+      }
+      @include px413() {
+        margin-bottom: 25px;
+      }
+    }
+    &_contents {
+      width: 75%;
+      margin: 0 auto;
+      padding: 2vw 8vw 5.5vw 8vw;
+      background-color: $gray-color;
+      border-collapse:collapse;
+      @include px1000() {
+        padding: 2vw 4vw 5.5vw 4vw;
+      }
+      @include px768() {
+        width: 90%;
+        padding: 30px 4vw 60px 4vw;
+      }
+      @include px413() {
+        width: 95%;
+      }
+      table {
+        width: 100%;
+        border-collapse:collapse;
+      }
+      tr {
+        border-bottom: 1px solid #e3e3e3;
+      }
+      th, td {
+        @include fz_vw(18);
+        line-height: 1.8;
+        letter-spacing: 0.25em;
+        @include px1280() {
+          font-size: 16px;
+        }
+        @include px768() {
+          font-size: 14px;
+          letter-spacing: 0.1em;
+        }
+      }
+      th {
+        text-align: left;
+        padding: 4vw 0 1vw 4vw;
+        @include px1280() {
+          width: 189px;
+        }
+        @include px540() {
+          width: 135px;
+          padding: 4vw 0 1vw 2vw;
+        }
+      }
+      td {
+        font-weight: bold;
+        padding: 4vw 0vw 1vw 4vw;
+        .br1 {
+          display: none;
+          @include px413() {
+            display: block;
+          }
+        }
+        @include px768() {
+          padding: 4vw 0vw 1vw 0;
+        }
       }
     }
   }
 }
+
