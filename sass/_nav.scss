@@ -2,12 +2,13 @@
 .nav {
   .menu {
     display: flex;
+    padding-bottom: .3vw;
     &_list {
       padding-left: 3.4vw;
       a {
         color: $black-color;
         @include fz_vw(17);
-        letter-spacing: 0.1em;
+        letter-spacing: 0.14em;
         font-weight: bold;
         @include px1366() {
           font-size: 16px;

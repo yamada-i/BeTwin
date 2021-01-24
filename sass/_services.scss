@@ -8,13 +8,13 @@
     position: relative;
     width: 100%;
     height: 62vw;  
-    margin-bottom: 10vw;
+    margin-bottom: 10.8vw;
     @include px1000() {
       height: 67vw;
     }
     @include px768() {
       height: 700px;
-      margin-bottom: 72px;
+      margin-bottom: 75px;
     }
     .dott {
       &:before {
@@ -23,8 +23,8 @@
     }
     &_contents {
       width: 75%;
-      margin: 20vw auto 0 auto;
-      padding: 8.5vw 0;
+      margin: 18.5vw auto 0 auto;
+      padding: 8.3vw 0 8.1vw 0;
       text-align: center;
       background-image: url(../img/about_bgimage.png);
       background-position: 50% 50%;
@@ -40,14 +40,18 @@
         background-size: cover;
       }
       @include px540() {
-        height: 640px;
+        height: 645px;
+        padding: 90px 0;
       }
       &_text {
         @include fz_vw(17);
         font-weight: bold;
-        letter-spacing: 0.25em;
-        line-height: 2.3;
-        margin: 1.5vw 0 7.7vw 0;
+        letter-spacing: 0.26em;
+        line-height: 2.35;
+        margin: 3vw 0 6.3vw 0;
+        &:nth-of-type(2) {
+          margin: 2vw 0 7.7vw 0;
+        }
         @include px1366() {
           font-size: 16px;
         }
@@ -58,7 +62,8 @@
           margin: 2vw 0 5.5vw 0;
         }
         @include px768() {
-          margin: 15px 0 60px 0;
+          line-height: 2.2;
+          margin: 20px 0 60px 0;
           &:nth-of-type(2) {
             margin: 15px 0 70px 0;
           }
@@ -66,8 +71,9 @@
         @include px540() {
           font-size: 14px;
           letter-spacing: 0.2em;
+          margin: 20px 0 70px 0;
           &:nth-of-type(2) {
-            margin: 15px 0 45px 0;
+            margin: 20px 0 30px 0;
           }
         }
         @include px340() {
@@ -84,7 +90,7 @@
     .outline {
       position: absolute;
       top: -9.6vw;
-      right: -0.9vw;
+      right: -1vw;
       z-index: 10;
       @include px768() {
         top: -75px;
@@ -97,15 +103,15 @@
       }
     }
     .circle:before {
-      top: -5.5vw;
-      right: 6.5vw;
+      top: -5.2vw;
+      right: 5.8vw;
       z-index: 2;
       @include px768() {
         top: -60px;
       }
       @include px540() {
-        top: -10vw;
-        right: 3vw;
+        top: -9vw;
+        right: 2.2vw;
       }
     }
   }
@@ -122,7 +128,7 @@
   }
   .intro {
     text-align: center;
-    margin-bottom: 10vw;
+    margin-bottom: 8.3vw;
     @include px768() {
       width: 90%;
       margin: 0 auto 80px auto;
@@ -131,11 +137,11 @@
       @include fz_vw(18);
       font-weight: bold;
       letter-spacing: 0.2em;
-      line-height: 2.4;  
+      line-height: 2.2;  
       @include px1280() {
         font-size: 16px;
       }
-      @include px413() {
+      @include px540() {
         font-size: 14px;
         letter-spacing: 0.1em;
       }
@@ -181,12 +187,12 @@
     }
     p {
       position: absolute;
-      top: 22.5vw;
-      left: 21.8vw;
+      top: 23.8vw;
+      left: 22.5vw;
       padding-right: 50px;
       line-height: 1.6;
       @include fz_vw(14);
-      letter-spacing: 0.22em;
+      letter-spacing: 0.2em;
       @include px1440() {
         font-size: 14px;
       }
@@ -283,7 +289,7 @@
   }
   .design {
     height: 60vw;
-    margin-bottom: 5vw;
+    margin-bottom: 4.5vw;
     @include px768() {
       height: 850px;
     }
@@ -300,8 +306,8 @@
       left: 5vw;
     }
     .h3_index {
-      top: 15vw;
-      left: 13vw;
+      top: 16.5vw;
+      left: 13.5vw;
       @include px768() {
         top: 140px;
       }
@@ -310,7 +316,7 @@
       }
     }
     .circle:before {
-      top: -3vw;
+      top: -4vw;
       left: -8vw;
     }
     .gray_bg {
@@ -379,7 +385,7 @@
     }
     .circle:before {
       top: -4vw;
-      right: -8vw;
+      right: -7vw;
     }
     .img_wrap {
       @include px768() {
@@ -414,7 +420,7 @@
     .btn {
       position: absolute;
       left: 50%;
-      bottom: 14vw;
+      bottom: 13.5vw;
       transform: translateX(-50%);
       @include px768() {
         bottom: 110px;

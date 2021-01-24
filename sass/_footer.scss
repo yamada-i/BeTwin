@@ -11,7 +11,7 @@
   }
   &_logo {
     display: block;
-    width: 17%;
+    width: 18%;
     margin: 0 auto 3vw auto;
     @include px768() {
       width: 26%;
@@ -27,7 +27,7 @@
   &_fb {
     display: block;
     width: 3.3%;
-    margin: 0 auto 3vw auto;
+    margin: 0 auto 3.8vw auto;
     @include px768() {
       width: 6%;
       margin: 0 auto 30px auto;

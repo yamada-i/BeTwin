@@ -15,11 +15,13 @@
   }
   @include px768() {
     font-size: 38px;
-    top: 250px;
+    top: 270px;
+    line-height: 1.5;
   }
   @include px540() {
     font-size: 32px;
-    top: 280px;
+    top: 310px;
+    left: 11vw;
   }
   .cc_br {
     display: none;
@@ -44,13 +46,14 @@
     @include px540() {
       width: 16px;
       height: 16px;
-      top: -4vw;
+      top: -3vw;
       left: -3.5vw;
     }
   }
 }
 #services, #cases, #company {
   .mv_catchcopy {
+    top: 19vw;
     left: 13.5vw;
     letter-spacing: 0.1em;
     @include px1000() {
@@ -60,7 +63,8 @@
       top: 300px;
     }
     @include px540() {
-      top: 330px;
+      top: 315px;
+      left: 11.5vw;
     }
   }
 }
@@ -71,7 +75,7 @@
       top: 260px;
     }
     @include px540() {
-      top: 290px;
+      top: 315px;
     }
     &_sub {
       @include fz_vw(23);
@@ -93,7 +97,8 @@
         top: 330px;
       }
       @include px540() {
-        top: 350px;
+        top: 370px;
+        left: 11.5vw;
       }  
     }
   }

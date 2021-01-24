@@ -48,6 +48,9 @@
           width: 80%;
           margin: 0 auto 15vw auto;
           position: relative;
+          @include px480() {
+            margin: 0 auto 50px auto;
+          }
           &:after {
             content: '';
             display: inline-block;
@@ -76,7 +79,7 @@
           height: 40vw;
           background-color: $naivy-color;
           position: absolute;
-          bottom: -20vw;
+          bottom: -23vw;
           right: 0;
           z-index: -5;    
         }

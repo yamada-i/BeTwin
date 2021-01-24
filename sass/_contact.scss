@@ -1,13 +1,13 @@
 /*---------お問い合わせ----------*/
 .contact {
-  padding: 15vw 0;
+  margin: 15.5vw 0 16vw 0;
   @include px768() {
-    margin-top: 150px;
-    padding: 15vw 0 140px 0;
+    margin-top: 125px;
+    padding: 100px 0 60px 0;
   }
   .dott {
     &:before {
-      top: -3vw;
+      top: -3.5vw;
       @include px768() {
         background-size: 115%;
         width: 36vw;
@@ -26,7 +26,7 @@
   &_contents {
     width: 75%;
     margin: 0 auto;
-    padding: 5vw 7vw 5vw 8vw;
+    padding: 5.5vw 7vw 5vw 7.6vw;
     background-color: $gray-color;
     text-align: center;
     position: relative;
@@ -35,6 +35,7 @@
     }
     @include px768() {
       width: 90%;
+      padding: 2.8vw 4vw 3.5vw 5vw;
     }
     @include px413() {
       width: 100%;
@@ -47,16 +48,20 @@
         transform: translateX(-50%);
       }
       @include px540() {
+        font-size: 32px;
         width: 100%;
+        &:after {
+          margin-top: 30px;
+        }
       }
     }
   }
   &_wrap {
-    margin-top: 5vw;
+    margin-top: 4vw;
     display: flex;
     justify-content: space-between;
     @include px768() {
-      margin-top: 38px;
+      margin-top: 50px;
       flex-direction: column;
     }
     &_tel, &_fax {
@@ -64,7 +69,7 @@
       align-items: center;
       @include px768() {
         width: 315px;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 45px auto;
       }
       img {
         width: 4.5vw;
@@ -95,7 +100,7 @@
         @include px768() {
           font-size: 16px;
         }
-        @include px540() {
+        @include px413() {
           font-size: 14px;
         }
       }

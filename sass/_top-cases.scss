@@ -10,11 +10,15 @@
     @include px768() {
       height: 1720px;
     }
+    @include px540() {
+      height: 1700px;
+    }
     @include px413() {
       height: 1560px;
     }
     .outline {
       position: absolute;
+      top: 1.5vw;
       right: -0.9vw;
       @include px768() {
         top: 45px;
@@ -45,7 +49,8 @@
         height: 1498px;
       }
       @include px540() {
-        width: 70vw;
+        width: 68vw;
+        height: 1540px;
       }
       @include px413() {
         height: 1380px;
@@ -56,15 +61,21 @@
       .h2_index {
         position: absolute;
         top: 4vw;
-        left: 14vw;
+        left: 14.4vw;
+        @include px540() {
+          left: 13vw;
+        }
         @include px413() {
           top: 7vw;
           left: 10vw;
         }
+        &:after {
+          margin-top: 20px;
+        }
       }
       .circle:before {
         position: absolute;
-        top: -3vw;
+        top: -2vw;
         left: -9vw;
         @include px540() {
           top: -6vw;
