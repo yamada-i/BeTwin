@@ -91,10 +91,10 @@
 @media screen and (min-width: 769px) {
   #cases {
     .case {
-      height: 93vw;
+      height: 87vw;
       position: relative;
       @include px1000() {
-        height: 98vw;
+        height: 82vw;
       }
       .outline {
         position: absolute;
@@ -102,16 +102,16 @@
         right: -1.9%;
         letter-spacing: -0.1em;
         @include fz_vw(250);
-      }
+        @include px1000() {
+          bottom: 40vw;
+        }
+       }
       &_top {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         position: relative;
         height: 45vw;
-        @include px1000() {
-          height: 50vw;
-        }
         &_right {
           width: 41%;
           position: absolute;
@@ -218,28 +218,38 @@
     }
     .case02, .case03 {
       padding: 100px 0 0 0;
-      height: 110vw;
+      height: 92vw;
+      @media screen and (max-width: 864px) {
+        height: 98vw;
+      }
       .case_top {
         @include px1000() {
-          height: 57vw;
+          height: 46vw;
+        }
+        @media screen and (max-width: 864px) {
+          height: 52vw;
         }
       }
       .outline {
-        bottom: 63vw;
+        bottom: 48vw;
         @include px1000() {
-          bottom: 42vw;
+          bottom: 30vw;
         }
       }
     }
     .case03 {
-      padding: 150px 0 0 0;
+      padding: 120px 0 0 0;
+      height: 82vw;
+      @media screen and (max-width: 864px) {
+        height: 90vw;
+      }
       h5 {
         letter-spacing: .12em;
       }
       .outline {
-        bottom: 63vw;
+        bottom: 35vw;
         @include px1000() {
-          bottom: 38vw;
+          bottom: 20vw;
         }
       }
     }

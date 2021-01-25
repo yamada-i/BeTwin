@@ -6,7 +6,10 @@
       margin: 250px 0 350px 0;
     }
     @include px1000() {
-      margin: 200px 0 350px 0;
+      margin: 140px 0 350px 0;
+    }
+    @media screen and (max-width: 840px) {
+      margin: 140px 0 280px 0;
     }
     @include px768() {
       margin: 150px 0 250px 0;

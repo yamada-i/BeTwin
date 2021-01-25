@@ -922,18 +922,18 @@ img {
   }
 }
 
-#company .mv {
+#company .mv, #cases .mv {
   margin-bottom: 12vw;
 }
 
 @media screen and (max-width: 768px) {
-  #company .mv {
+  #company .mv, #cases .mv {
     margin-bottom: 120px;
   }
 }
 
 @media screen and (max-width: 768px) and (max-width: 768px) {
-  #company .mv .pc_MV {
+  #company .mv .pc_MV, #cases .mv .pc_MV {
     -o-object-position: 90% 100%;
        object-position: 90% 100%;
   }
@@ -1232,7 +1232,7 @@ img {
 }
 
 .cases_contents_wrap {
-  padding: 16.5vw 9.4vw 0 9.4vw;
+  padding: 18vw 9.4vw 0 9.4vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1444,7 +1444,7 @@ img {
 
 #cases .cases_list .outline {
   position: absolute;
-  top: 0;
+  top: -4vw;
   right: 0;
 }
 
@@ -1455,7 +1455,7 @@ img {
   height: 95vw;
   background-color: #f5f5f5;
   position: absolute;
-  top: 10vw;
+  top: 5vw;
   right: 0;
   z-index: -5;
 }
@@ -1475,8 +1475,8 @@ img {
 @media screen and (max-width: 768px) {
   #cases .cases_list:after {
     width: 60%;
-    height: 3050px;
-    top: 80px;
+    height: 3120px;
+    top: 50px;
   }
 }
 
@@ -1502,7 +1502,7 @@ img {
 
 #cases .cases_list .h3_index {
   position: absolute;
-  top: 16vw;
+  top: 9vw;
   left: 14vw;
   font-size: 34px;
   font-size: 2.36111vw;
@@ -1536,7 +1536,7 @@ img {
 }
 
 #cases .cases_contents_wrap {
-  padding: 28vw 9.2vw 0 9.2vw;
+  padding: 22vw 9.2vw 0 9.2vw;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -2298,7 +2298,13 @@ img {
 
 @media screen and (max-width: 1000px) {
   #company .message {
-    margin: 200px 0 350px 0;
+    margin: 140px 0 350px 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #company .message {
+    margin: 140px 0 280px 0;
   }
 }
 
@@ -2847,14 +2853,14 @@ img {
 
 @media screen and (min-width: 769px) {
   #cases .case {
-    height: 93vw;
+    height: 87vw;
     position: relative;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   #cases .case {
-    height: 98vw;
+    height: 82vw;
   }
 }
 
@@ -2867,6 +2873,15 @@ img {
     font-size: 250px;
     font-size: 17.36111vw;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  #cases .case .outline {
+    bottom: 40vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
   #cases .case_top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2883,15 +2898,6 @@ img {
     position: relative;
     height: 45vw;
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  #cases .case_top {
-    height: 50vw;
-  }
-}
-
-@media screen and (min-width: 769px) {
   #cases .case_top_right {
     width: 41%;
     position: absolute;
@@ -3036,43 +3042,65 @@ img {
 @media screen and (min-width: 769px) {
   #cases .case02, #cases .case03 {
     padding: 100px 0 0 0;
-    height: 110vw;
+    height: 92vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 864px) {
+  #cases .case02, #cases .case03 {
+    height: 98vw;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   #cases .case02 .case_top, #cases .case03 .case_top {
-    height: 57vw;
+    height: 46vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 864px) {
+  #cases .case02 .case_top, #cases .case03 .case_top {
+    height: 52vw;
   }
 }
 
 @media screen and (min-width: 769px) {
   #cases .case02 .outline, #cases .case03 .outline {
-    bottom: 63vw;
+    bottom: 48vw;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   #cases .case02 .outline, #cases .case03 .outline {
-    bottom: 42vw;
+    bottom: 30vw;
   }
 }
 
 @media screen and (min-width: 769px) {
   #cases .case03 {
-    padding: 150px 0 0 0;
+    padding: 120px 0 0 0;
+    height: 82vw;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 864px) {
+  #cases .case03 {
+    height: 90vw;
+  }
+}
+
+@media screen and (min-width: 769px) {
   #cases .case03 h5 {
     letter-spacing: .12em;
   }
   #cases .case03 .outline {
-    bottom: 63vw;
+    bottom: 35vw;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   #cases .case03 .outline {
-    bottom: 38vw;
+    bottom: 20vw;
   }
 }
 
