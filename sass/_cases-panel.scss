@@ -140,11 +140,14 @@
   .cases {
     &_list {
       position: relative;
-      margin-bottom: 20vw;
+      margin-bottom: 15vw;
       .outline {
         position: absolute;
         top: -4vw;
         right: 0;
+        @include px540() {
+          top: 0;
+        }
       }
       &:after {
         content: '';

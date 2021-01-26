@@ -307,7 +307,7 @@ img {
 
 @media screen and (max-width: 413px) {
   .btn {
-    width: 210px;
+    padding: 10px 40px;
   }
 }
 
@@ -916,12 +916,6 @@ img {
   }
 }
 
-@media screen and (max-width: 540px) {
-  #cases .mv {
-    margin-bottom: 60px;
-  }
-}
-
 #company .mv, #cases .mv {
   margin-bottom: 12vw;
 }
@@ -936,6 +930,19 @@ img {
   #company .mv .pc_MV, #cases .mv .pc_MV {
     -o-object-position: 90% 100%;
        object-position: 90% 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  #cases .mv .pc_MV {
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #cases .mv {
+    margin-bottom: 60px;
   }
 }
 
@@ -1439,13 +1446,19 @@ img {
 
 #cases .cases_list {
   position: relative;
-  margin-bottom: 20vw;
+  margin-bottom: 15vw;
 }
 
 #cases .cases_list .outline {
   position: absolute;
   top: -4vw;
   right: 0;
+}
+
+@media screen and (max-width: 540px) {
+  #cases .cases_list .outline {
+    top: 0;
+  }
 }
 
 #cases .cases_list:after {
@@ -1742,7 +1755,7 @@ img {
 
 @media screen and (max-width: 540px) {
   #top .services .outline {
-    top: -13vw;
+    top: -54px;
   }
 }
 
@@ -2155,13 +2168,13 @@ img {
 
 @media screen and (max-width: 480px) {
   #services .office {
-    height: 1280px;
+    height: 1250px;
   }
 }
 
 @media screen and (max-width: 413px) {
   #services .office {
-    height: 1240px;
+    height: 1200px;
   }
 }
 
@@ -2232,7 +2245,7 @@ img {
 
 @media screen and (max-width: 480px) {
   #services .office .img_wrap {
-    padding: 265px 0 50px 0;
+    padding: 265px 0 40px 0;
   }
 }
 
@@ -2282,6 +2295,12 @@ img {
 @media screen and (max-width: 768px) {
   #services .office .btn {
     bottom: 110px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #services .office .btn {
+    bottom: 80px;
   }
 }
 
@@ -2854,6 +2873,7 @@ img {
 @media screen and (min-width: 769px) {
   #cases .case {
     height: 87vw;
+    padding: 100px 0 0 0;
     position: relative;
   }
 }
@@ -3041,7 +3061,7 @@ img {
 
 @media screen and (min-width: 769px) {
   #cases .case02, #cases .case03 {
-    padding: 100px 0 0 0;
+    padding: 140px 0 0 0;
     height: 92vw;
   }
 }
