@@ -96,7 +96,7 @@
         top: -75px;
       }
       @include px540() {
-        top: -13vw;
+        top: -54px;
       }
       @include px413() {
         top: -45px;
@@ -349,10 +349,10 @@
       margin-bottom: 100px;
     }
     @include px480() {
-      height: 1280px;
+      height: 1250px;
     }
     @include px413() {
-      height: 1240px;
+      height: 1200px;
     }
     @include px340() {
       height: 1190px;
@@ -395,7 +395,7 @@
         padding: 220px 0 50px 0;
       }
       @include px480() {
-        padding: 265px 0 50px 0;
+        padding: 265px 0 40px 0;
       }
     }
     .gray_bg {
@@ -424,6 +424,9 @@
       transform: translateX(-50%);
       @include px768() {
         bottom: 110px;
+      }
+      @include px480() {
+        bottom: 80px;
       }
     }
   }

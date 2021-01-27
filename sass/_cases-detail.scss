@@ -92,6 +92,7 @@
   #cases {
     .case {
       height: 87vw;
+      padding: 100px 0 0 0;
       position: relative;
       @include px1000() {
         height: 82vw;
@@ -217,7 +218,7 @@
       }
     }
     .case02, .case03 {
-      padding: 100px 0 0 0;
+      padding: 140px 0 0 0;
       height: 92vw;
       @media screen and (max-width: 864px) {
         height: 98vw;

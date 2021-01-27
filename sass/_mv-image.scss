@@ -104,13 +104,6 @@
     }
   }
 }
-#cases {
-  .mv {
-    @include px540() {
-      margin-bottom: 60px;
-    }
-  }
-}
 #company, #cases {
   .mv {
     margin-bottom: 12vw;
@@ -121,6 +114,20 @@
           object-position: 90% 100%;
         }
       }
+    }
+  }
+}
+#cases {
+  .mv {
+    @include px768() {
+      .pc_MV {
+        @include px768() {
+          object-position: 50% 100%;
+        }
+      }
+    }
+    @include px540() {
+      margin-bottom: 60px;
     }
   }
 }
