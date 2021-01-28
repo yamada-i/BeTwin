@@ -174,7 +174,6 @@ img {
   background-color: $yellow-color;
   border-radius: 20px;
   padding: .9vw 6.3vw;
-  box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
   @include px1366() {
     font-size: 16px;
   }
