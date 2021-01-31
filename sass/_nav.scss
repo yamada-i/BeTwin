@@ -36,11 +36,25 @@
         width: 25%;
         border: 1px solid $white-color;
         a {
-          display: block;
           color: $white-color;
-          padding: 20px 0;
+          padding: 10px 0;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
       }
+    }
+  }
+  .sp_icon {
+    display: none;
+    @include px540() {
+      display: block;
+      width: 35px;
+      margin: 0 auto 10px auto;
+    }
+    @include px413 {
+      width: 25px;
     }
   }
 }
