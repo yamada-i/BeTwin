@@ -11,7 +11,7 @@
     }
     @include px768() {
       padding: 148px 0 0 0;
-      margin-bottom: 120px;
+      margin-bottom: 0;
       flex-direction: column;
     }
     @include px540() {
@@ -23,11 +23,11 @@
     padding: 0 3vw;
     @include px768() {
       width: 302px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 0 auto;
       padding: 0;
     }
     @include px540() {
-      margin: 0 auto 34px auto;
+      margin: 0 auto 0 auto;
 
     }
     @include px413() {
@@ -95,7 +95,7 @@
       }
       @include px768() {
         position: relative;
-        top: -40px;
+        top: -52px;
         padding: 11px 45px;
         letter-spacing: 0.2em;
       }

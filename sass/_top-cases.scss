@@ -8,13 +8,13 @@
       height: 71vw;
     }
     @include px768() {
-      height: 1720px;
+      height: 1660px;
     }
     @include px540() {
-      height: 1700px;
+      height: 1620px;
     }
     @include px413() {
-      height: 1560px;
+      height: 1480px;
     }
     .outline {
       position: absolute;
@@ -46,14 +46,16 @@
       @include px768() {
         width: 61vw;
         right: 0;
-        height: 1498px;
+        top: 220px;
+        height: 1448px;
       }
       @include px540() {
         width: 68vw;
-        height: 1540px;
+        height: 1430px;
+        top: 180px;
       }
       @include px413() {
-        height: 1380px;
+        height: 1300px;
       }
     }
     &_contents {

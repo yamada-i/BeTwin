@@ -248,7 +248,7 @@
       }
       th, td {
         @include fz_vw(18);
-        line-height: 1.8;
+        line-height: 30px;
         letter-spacing: 0.25em;
         @include px1280() {
           font-size: 16px;
@@ -274,7 +274,7 @@
         padding: 4vw 0vw 1vw 4vw;
         .br1 {
           display: none;
-          @include px413() {
+          @include px540() {
             display: block;
           }
         }

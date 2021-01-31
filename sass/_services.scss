@@ -62,7 +62,7 @@
           margin: 2vw 0 5.5vw 0;
         }
         @include px768() {
-          line-height: 2.2;
+          line-height: 30px;
           margin: 20px 0 60px 0;
           &:nth-of-type(2) {
             margin: 15px 0 70px 0;
@@ -137,7 +137,7 @@
       @include fz_vw(18);
       font-weight: bold;
       letter-spacing: 0.2em;
-      line-height: 2.2;  
+      line-height: 30px;  
       @include px1280() {
         font-size: 16px;
       }
@@ -341,6 +341,7 @@
   .office {
     height: 71vw;
     margin-bottom: 5vw;
+    text-align: center;
     @include px768() {
       height: 900px;
     }
@@ -418,15 +419,16 @@
       }
     }
     .btn {
-      position: absolute;
-      left: 50%;
-      bottom: 13.5vw;
-      transform: translateX(-50%);
+      position: relative;
+      bottom: -55vw;
       @include px768() {
-        bottom: 110px;
+        bottom: 0;
+      }
+      @include px540() {
+        bottom: 20px;
       }
       @include px480() {
-        bottom: 80px;
+        bottom: 25px;
       }
     }
   }
