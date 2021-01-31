@@ -281,8 +281,6 @@ img {
   background-color: #fff579;
   border-radius: 20px;
   padding: .9vw 6.3vw;
-  -webkit-box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
-          box-shadow: 2px 4px 4px rgba(107, 72, 72, 0.2);
 }
 
 @media screen and (max-width: 1366px) {
@@ -1335,8 +1333,6 @@ img {
     width: 72%;
     top: -67px;
     padding: 17px 10px;
-    -webkit-box-shadow: 0 2px 4px #999;
-            box-shadow: 0 2px 4px #999;
   }
 }
 
@@ -1391,8 +1387,6 @@ img {
     position: relative;
     top: -40px;
     padding: 11px 45px;
-    -webkit-box-shadow: 0 2px 4px #999;
-            box-shadow: 0 2px 4px #999;
     letter-spacing: 0.2em;
   }
 }
@@ -1592,11 +1586,6 @@ img {
   #cases .cases_contents_panel {
     width: 260px;
   }
-}
-
-#cases .cases_contents_panel_client {
-  -webkit-box-shadow: 0 2px 4px #999;
-          box-shadow: 0 2px 4px #999;
 }
 
 #cases .cases_contents_panel_3 .cases_contents_panel_client, #cases .cases_contents_panel_4 .cases_contents_panel_client, #cases .cases_contents_panel_6 .cases_contents_panel_client {

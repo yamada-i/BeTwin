@@ -60,7 +60,6 @@
         width: 72%;
         top: -67px;
         padding: 17px 10px;
-        box-shadow: 0 2px 4px #999;
       }
       @include px540() {
         height: 93px;
@@ -98,7 +97,6 @@
         position: relative;
         top: -40px;
         padding: 11px 45px;
-        box-shadow: 0 2px 4px #999;
         letter-spacing: 0.2em;
       }
     }
@@ -232,9 +230,6 @@
         @include px413() {
           width: 260px;
         }    
-        &_client {
-          box-shadow: 0 2px 4px #999;
-        }
       }
       &_panel_3, &_panel_4, &_panel_6 {
         .cases_contents_panel_client {
