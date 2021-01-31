@@ -185,9 +185,10 @@
       }
       &_bottom {
         width: 100%;
+        height: auto;
         padding: 0 10%;
         display: flex;
-        flex-wrap: wrap;
+        align-items: flex-start;
         position: relative;
         &_img {
           width: 33%;
@@ -221,14 +222,14 @@
       padding: 140px 0 0 0;
       height: 92vw;
       @media screen and (max-width: 864px) {
-        height: 98vw;
+        height: 100vw;
       }
       .case_top {
         @include px1000() {
           height: 46vw;
         }
         @media screen and (max-width: 864px) {
-          height: 52vw;
+          height: 56vw;
         }
       }
       .outline {
