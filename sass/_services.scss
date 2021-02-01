@@ -225,6 +225,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      height: auto;
+      align-items: flex-start;
       @include px1000() {
         padding: 16vw 13vw 5vw 13vw;
       }
