@@ -120,7 +120,11 @@
         @include px413() {
           font-size: 28px;
         }
-      }
+      }  
     }
+  }
+  a.contact_wrap_fax {
+    pointer-events: none;
+    cursor: none;
   }
 }
