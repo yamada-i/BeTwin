@@ -140,6 +140,7 @@
       line-height: 60px;  
       @include px1280() {
         font-size: 16px;
+        line-height: 30px;
       }
       @include px540() {
         font-size: 14px;
@@ -151,8 +152,11 @@
         @include px768() {
           display: block;
         }
-        @include px413() {
-          display: none;
+      }
+      .br3 {
+        display: none;
+        @include px768() {
+          display: block;
         }
       }
     }
@@ -185,35 +189,6 @@
     }
     .h3_index {
       position: absolute;
-    }
-    p {
-      position: absolute;
-      top: 23.8vw;
-      left: 22.5vw;
-      padding-right: 50px;
-      line-height: 1.6;
-      @include fz_vw(14);
-      letter-spacing: 0.2em;
-      @include px1440() {
-        font-size: 14px;
-      }
-      @include px768() {
-        top: 220px;
-      }
-      @include px540() {
-        top: 200px;
-        left: 135px;
-        padding-right: 30px;
-      }
-      @include px413() {
-        left: 120px;
-      }
-      @include px340() {
-        left: 100px;
-      }
-      br {
-        display: none;
-      }
     }
     .circle:before {
       position: absolute;
@@ -318,6 +293,35 @@
         top: 120px;
       }
     }
+    p {
+      position: absolute;
+      top: 23.8vw;
+      left: 14vw;
+      padding-right: 50px;
+      line-height: 1.6;
+      @include fz_vw(14);
+      letter-spacing: 0.2em;
+      @include px1440() {
+        font-size: 14px;
+      }
+      @include px768() {
+        top: 220px;
+      }
+      @include px540() {
+        top: 200px;
+        left: 135px;
+        padding-right: 30px;
+      }
+      @include px413() {
+        left: 120px;
+      }
+      @include px340() {
+        left: 100px;
+      }
+      br {
+        display: none;
+      }
+    }
     .circle:before {
       top: -4vw;
       left: -8vw;
@@ -344,13 +348,12 @@
   .office {
     height: 71vw;
     margin-bottom: 5vw;
-    text-align: center;
     @include px768() {
-      height: 900px;
+      height: 920px;
     }
     @include px540() {
       height: 1360px;
-      margin-bottom: 100px;
+      margin-bottom: 150px;
     }
     @include px480() {
       height: 1250px;
@@ -385,45 +388,67 @@
       }
     }
     .outline {
-      left: -.8vw;
+      position: static;
+      // left: -.8vw;
     }
     .circle:before {
       top: -4vw;
       right: -7vw;
     }
+    p {
+      position: absolute;
+      top: 23vw;
+      right: 13vw;
+      line-height: 1.6;
+      padding-left: 80px;
+      @include fz_vw(14);
+      letter-spacing: 0.2em;
+      padding-top: 20px;
+      @include px1440() {
+        font-size: 14px;
+      }
+      @include px1280() {
+        top: 22vw;
+      }
+      @include px768() {
+        top: 220px;
+      }
+    }
     .img_wrap {
       @include px768() {
-        padding: 260px 0 50px 0;
+        padding: 200px 0 50px 0;
       }
       @include px540() {
-        padding: 220px 0 50px 0;
+        padding: 250px 0 50px 0;
       }
       @include px480() {
-        padding: 265px 0 40px 0;
+        padding: 240px 0 40px 0;
       }
     }
     .gray_bg {
       left: 0;
       height: 54vw;
       @include px768() {
-        height: 770px;
+        height: 790px;
       }
       @include px540() {
-        height: 1260px;
+        height: 1360px;
       }
       @include px480() {
-        height: 1170px;
+        height: 1220px;
       }
       @include px413() {
-        height: 1130px;
+        height: 1170px;
       }
       @include px340() {
         height: 1090px;
       }
     }
-    .btn {
+    &_btn {
+      width: 100%;
+      text-align: center;
       position: relative;
-      bottom: -55vw;
+      bottom: -40vw;
       @include px768() {
         bottom: 0;
       }

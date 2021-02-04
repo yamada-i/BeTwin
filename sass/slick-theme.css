@@ -174,7 +174,7 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-    color: #fff579; /* hover時の色を変更 */
+    color:#141f50; /* hover時の色を変更 */
 }
 .slick-dots li button:before
 {
@@ -193,7 +193,7 @@
     text-align: center;
 
     opacity: .25;
-    color:  #fff579;
+    color:  #141f50;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -201,5 +201,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: #fff579;
+    color: #141f50;
 }

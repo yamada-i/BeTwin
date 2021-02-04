@@ -415,7 +415,7 @@ img {
 
 @media screen and (max-width: 540px) {
   .footer {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 
@@ -1553,34 +1553,25 @@ img {
 @media screen and (max-width: 480px) {
   #cases .cases_list:after {
     width: 70%;
+    height: 2960px;
   }
 }
 
 @media screen and (max-width: 413px) {
   #cases .cases_list:after {
     top: 48px;
-    height: 2800px;
+    height: 2670px;
   }
 }
 
 #cases .cases_list .h3_index {
   position: absolute;
-  top: 11vw;
+  top: 10.5vw;
   left: 14vw;
-  font-size: 34px;
-  font-size: 2.36111vw;
-}
-
-@media screen and (max-width: 1000px) {
-  #cases .cases_list .h3_index {
-    font-size: 46px;
-    font-size: 3.19444vw;
-  }
 }
 
 @media screen and (max-width: 768px) {
   #cases .cases_list .h3_index {
-    font-size: 32px;
     top: 128px;
     left: 13vw;
   }
@@ -1588,8 +1579,8 @@ img {
 
 #cases .cases_list .circle:before {
   position: absolute;
-  top: -6vw;
-  left: -7vw;
+  top: -4.5vw;
+  left: -7.5vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -1614,7 +1605,7 @@ img {
 @media screen and (max-width: 480px) {
   #cases .cases_contents_wrap {
     margin-bottom: -20px;
-    padding: 230px 9.2vw 0 9.2vw;
+    padding: 230px 9.2vw 50px 9.2vw;
   }
 }
 
@@ -1865,6 +1856,7 @@ img {
 @media screen and (max-width: 1280px) {
   #services .intro p {
     font-size: 16px;
+    line-height: 30px;
   }
 }
 
@@ -1886,9 +1878,13 @@ img {
   }
 }
 
-@media screen and (max-width: 413px) {
-  #services .intro p .br2 {
-    display: none;
+#services .intro p .br3 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #services .intro p .br3 {
+    display: block;
   }
 }
 
@@ -1930,53 +1926,6 @@ img {
 
 #services .design .h3_index, #services .office .h3_index {
   position: absolute;
-}
-
-#services .design p, #services .office p {
-  position: absolute;
-  top: 23.8vw;
-  left: 22.5vw;
-  padding-right: 50px;
-  line-height: 1.6;
-  font-size: 14px;
-  font-size: 0.97222vw;
-  letter-spacing: 0.2em;
-}
-
-@media screen and (max-width: 1440px) {
-  #services .design p, #services .office p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #services .design p, #services .office p {
-    top: 220px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #services .design p, #services .office p {
-    top: 200px;
-    left: 135px;
-    padding-right: 30px;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  #services .design p, #services .office p {
-    left: 120px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  #services .design p, #services .office p {
-    left: 100px;
-  }
-}
-
-#services .design p br, #services .office p br {
-  display: none;
 }
 
 #services .design .circle:before, #services .office .circle:before {
@@ -2160,6 +2109,53 @@ img {
   }
 }
 
+#services .design p {
+  position: absolute;
+  top: 23.8vw;
+  left: 14vw;
+  padding-right: 50px;
+  line-height: 1.6;
+  font-size: 14px;
+  font-size: 0.97222vw;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 1440px) {
+  #services .design p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .design p {
+    top: 220px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #services .design p {
+    top: 200px;
+    left: 135px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  #services .design p {
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #services .design p {
+    left: 100px;
+  }
+}
+
+#services .design p br {
+  display: none;
+}
+
 #services .design .circle:before {
   top: -4vw;
   left: -8vw;
@@ -2202,19 +2198,18 @@ img {
 #services .office {
   height: 71vw;
   margin-bottom: 5vw;
-  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   #services .office {
-    height: 900px;
+    height: 920px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #services .office {
     height: 1360px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 }
 
@@ -2275,7 +2270,7 @@ img {
 }
 
 #services .office .outline {
-  left: -.8vw;
+  position: static;
 }
 
 #services .office .circle:before {
@@ -2283,21 +2278,51 @@ img {
   right: -7vw;
 }
 
+#services .office p {
+  position: absolute;
+  top: 23vw;
+  right: 13vw;
+  line-height: 1.6;
+  padding-left: 80px;
+  font-size: 14px;
+  font-size: 0.97222vw;
+  letter-spacing: 0.2em;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  #services .office p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #services .office p {
+    top: 22vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .office p {
+    top: 220px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #services .office .img_wrap {
-    padding: 260px 0 50px 0;
+    padding: 200px 0 50px 0;
   }
 }
 
 @media screen and (max-width: 540px) {
   #services .office .img_wrap {
-    padding: 220px 0 50px 0;
+    padding: 250px 0 50px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
   #services .office .img_wrap {
-    padding: 265px 0 40px 0;
+    padding: 240px 0 40px 0;
   }
 }
 
@@ -2308,25 +2333,25 @@ img {
 
 @media screen and (max-width: 768px) {
   #services .office .gray_bg {
-    height: 770px;
+    height: 790px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #services .office .gray_bg {
-    height: 1260px;
+    height: 1360px;
   }
 }
 
 @media screen and (max-width: 480px) {
   #services .office .gray_bg {
-    height: 1170px;
+    height: 1220px;
   }
 }
 
 @media screen and (max-width: 413px) {
   #services .office .gray_bg {
-    height: 1130px;
+    height: 1170px;
   }
 }
 
@@ -2336,25 +2361,27 @@ img {
   }
 }
 
-#services .office .btn {
+#services .office_btn {
+  width: 100%;
+  text-align: center;
   position: relative;
-  bottom: -55vw;
+  bottom: -40vw;
 }
 
 @media screen and (max-width: 768px) {
-  #services .office .btn {
+  #services .office_btn {
     bottom: 0;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #services .office .btn {
+  #services .office_btn {
     bottom: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #services .office .btn {
+  #services .office_btn {
     bottom: 25px;
   }
 }

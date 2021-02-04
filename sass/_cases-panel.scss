@@ -174,30 +174,26 @@
         }
         @include px480() {
           width: 70%;
+          height: 2960px;
         }
         @include px413() {
           top: 48px;
-          height: 2800px;
+          height: 2670px;
         }
       }
       .h3_index {
         position: absolute;
-        top: 11vw;
+        top: 10.5vw;
         left: 14vw;
-        @include fz_vw(34);
-        @include px1000() {
-          @include fz_vw(46);
-        }
         @include px768() {
-          font-size: 32px;
           top: 128px;
           left: 13vw;
         }
       }
       .circle:before {
         position: absolute;
-        top: -6vw;
-        left: -7vw;
+        top: -4.5vw;
+        left: -7.5vw;
         @include px480() {
           top: -7vw;
         }
@@ -212,7 +208,7 @@
         }
         @include px480() {
           margin-bottom: -20px;
-          padding: 230px 9.2vw 0 9.2vw;
+          padding: 230px 9.2vw 50px 9.2vw;
         }
       }
       &_panel {
