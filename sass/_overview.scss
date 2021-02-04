@@ -59,10 +59,10 @@
       top: 3vw;
       left: 6vw;
       @include px480() {
-        top: 6vw;
+        top: 10.5vw;
       }
       @include px413 {
-        top: 40px;
+        top: 50px;
         left: 20px;
       }
       @include px340() {

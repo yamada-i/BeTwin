@@ -17,9 +17,12 @@
     }
     &:after {
       opacity: .1;
-      bottom: -3vw;
+      bottom: -3.5vw;
       @include px768() {
-        bottom: -5vw;
+        bottom: -7vw;
+        background-size: 115%;
+        width: 36vw;
+        height: 26vw;
       }
     }
   }

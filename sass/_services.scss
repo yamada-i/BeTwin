@@ -137,13 +137,14 @@
       @include fz_vw(18);
       font-weight: bold;
       letter-spacing: 0.2em;
-      line-height: 30px;  
+      line-height: 60px;  
       @include px1280() {
         font-size: 16px;
       }
       @include px540() {
         font-size: 14px;
         letter-spacing: 0.1em;
+        line-height: 30px;
       }
       .br2 {
         display: none;
