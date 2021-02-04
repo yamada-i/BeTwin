@@ -43,13 +43,12 @@
     @include fz_vw(18);
     display: block;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     @include px1440() {
       font-size: 18px;
     }
     @include px768() {
       font-size: 14px;
-      margin-bottom: 15px;
     }
   }
   &_copyright {

@@ -474,7 +474,7 @@ img {
   font-size: 1.25vw;
   display: block;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -486,7 +486,6 @@ img {
 @media screen and (max-width: 768px) {
   .footer_privacypolicy {
     font-size: 14px;
-    margin-bottom: 15px;
   }
 }
 
