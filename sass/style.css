@@ -2875,12 +2875,6 @@ img {
   #cases .case {
     position: relative;
   }
-  #cases .case .outline {
-    position: absolute;
-    bottom: 42.5vw;
-    right: -30px;
-    font-size: 140px;
-  }
   #cases .case_top_right .circle:before {
     top: -5vw;
     left: 6vw;
@@ -2970,23 +2964,6 @@ img {
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   #cases .case {
     height: 82vw;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  #cases .case .outline {
-    position: absolute;
-    bottom: 50vw;
-    right: -1.9%;
-    letter-spacing: -0.1em;
-    font-size: 250px;
-    font-size: 17.36111vw;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  #cases .case .outline {
-    bottom: 40vw;
   }
 }
 

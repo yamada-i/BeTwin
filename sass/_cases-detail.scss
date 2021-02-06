@@ -10,12 +10,6 @@
     }
     .case {
       position: relative;
-      .outline {
-        position: absolute;
-        bottom: 42.5vw;
-        right: -30px;
-        font-size: 140px;
-      }
       &_top {
         &_right {
           .circle:before {
@@ -97,16 +91,6 @@
       @include px1000() {
         height: 82vw;
       }
-      .outline {
-        position: absolute;
-        bottom: 50vw;
-        right: -1.9%;
-        letter-spacing: -0.1em;
-        @include fz_vw(250);
-        @include px1000() {
-          bottom: 40vw;
-        }
-       }
       &_top {
         display: flex;
         flex-direction: row-reverse;
