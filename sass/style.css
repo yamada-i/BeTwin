@@ -2431,7 +2431,7 @@ img {
 #company .message:after {
   content: '';
   display: inline-block;
-  width: 78%;
+  width: 87.3%;
   height: 105vw;
   background-color: #f5f5f5;
   position: absolute;
@@ -2449,6 +2449,7 @@ img {
 @media screen and (max-width: 768px) {
   #company .message:after {
     height: 1050px;
+    width: 80%;
   }
 }
 
