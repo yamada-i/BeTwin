@@ -132,10 +132,11 @@
             @include fz_vw(14);
             font-weight: 500;
             letter-spacing: .25em;
-            line-height: 30px;
             padding-right: 5vw;
+            line-height: 2.2vw;
             @include px1440() {
               font-size: 14px;
+              line-height: 30px;
             }
             @include px1280() {
               padding-right: 0;

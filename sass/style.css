@@ -3041,14 +3041,15 @@ img {
     font-size: 0.97222vw;
     font-weight: 500;
     letter-spacing: .25em;
-    line-height: 30px;
     padding-right: 5vw;
+    line-height: 2.2vw;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   #cases .case_top_right p {
     font-size: 14px;
+    line-height: 30px;
   }
 }
 
